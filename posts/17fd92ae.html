@@ -10,7 +10,7 @@
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY" />
     <meta name="google-site-verification" content="pBWoGvVEP36FzzS4xIpoMejc5UKi3RKcxd9rWWcjiDg" />
     <meta name="360-site-verification" content="2db45fc772bbd3e7efd0985eec0fff97" />
-    <meta name="description" content="0x001 Hexo 渲染&amp;emsp;&amp;emsp;在Hexo部署时会默认渲染source下的所有html页面，但有时候想在Hexo博客上单独自定义html页面或README.md时，却不希望被Hexo渲染。因此对某个文件或者目录进行排除渲染">
+    <meta name="description" content="Hexo之渲染绕过 | YoYopupunsi">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -879,7 +879,7 @@
                 <div class="post-author info-break-policy">
                     <i class="fa fa-user-o fa-fw"></i>作者:&nbsp;&nbsp;
                     
-                        luckyzmj
+                        YoYopupunsi
                     
                 </div>
 
@@ -887,7 +887,7 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        475
+                        0
                     </div>
                     
 
@@ -911,47 +911,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="0x001-Hexo-渲染"><a href="#0x001-Hexo-渲染" class="headerlink" title="0x001 Hexo 渲染"></a>0x001 Hexo 渲染</h3><p>&emsp;&emsp;在Hexo部署时会默认渲染source下的所有html页面，但有时候想在Hexo博客上单独自定义html页面或README.md时，却不希望被Hexo渲染。因此对某个文件或者目录进行排除渲染是非常必要的。</p>
-<h3 id="0x002-方法一：font-matter"><a href="#0x002-方法一：font-matter" class="headerlink" title="0x002 方法一：font matter"></a>0x002 方法一：font matter</h3><p><code>Hexo</code>新建网站页面，然后将你的代码直接写入 <code>index.md</code> 中</p>
-<p>在 <code>Front matter</code> 中添加 <code>layout: false</code>，此方法适用于单一的纯<code>HTML</code><br><code>CSS</code> 页面。</p>
-<pre><code class="bash">---
-title: tools
-date: 2020-04-28 00:00:00
-type: &quot;tools&quot;
-layout: false
----
-</code></pre>
-<h3 id="0x003-方法二：skip-render"><a href="#0x003-方法二：skip-render" class="headerlink" title="0x003 方法二：skip render"></a>0x003 方法二：skip render</h3><p>在博客根目录下的 <code>_config.yml</code>，找到 <code>skip_render</code>，大概在32行左右，写入你想要的跳过渲染的路径，注意缩进和空格。</p>
-<pre><code class="bash"># 指定目录跳过hexo渲染
-skip_render:
-  - &#39;tools/*&#39;
-  - &#39;tools/**&#39;
-</code></pre>
-<blockquote>
-<p>注释：<code>tools/*</code> 表示在目录 <code>source/fireworks</code> 下的文件全部跳过渲染，<code>tools/**</code> 表示在博客根目录 <code>source/tools/</code> 文件夹下的文件全部跳过渲染（例如页面的 js、css 在另一个文件夹中）。</p>
-</blockquote>
-<h3 id="0x004-案例：webstack-导航"><a href="#0x004-案例：webstack-导航" class="headerlink" title="0x004 案例：webstack 导航"></a>0x004 案例：webstack 导航</h3><p><code>webstack</code>是一个纯静态的网址导航网站，内容均由<code>viggo</code>收集并整理。项目基于<code>bootstrap</code>前端框架开发。</p>
-<p><img src="https://camo.githubusercontent.com/41111c4c1d9922982f380566e6a2f8415204c52c/687474703a2f2f7777772e776562737461636b2e63632f6173736574732f696d616765732f707265766965772e676966" alt="image"></p>
-<ul>
-<li>Github：<a target="_blank" rel="noopener" href="https://github.com/WebStackPage/WebStackPage.github.io">https://github.com/WebStackPage/WebStackPage.github.io</a></li>
-</ul>
-<p>在博客根目录 <code>source/</code>下新建<code>tools</code>，然后新建<code>index.html</code>,将<code>webstack</code>网页源码全选复制粘贴到里面。</p>
-<ul>
-<li>本站的webstack源码：<a href="view-source:http://luckyzmj.cn/tools/">view-source:http://luckyzmj.cn/tools/</a></li>
-</ul>
-<blockquote>
-<p>注意：将源码里的部分信息以及跳转链接按照你真实个人博客的环境进行修改。</p>
-</blockquote>
-<p>然后打开博客根目录下配置文件<code>_config.yml</code>，找到<code>skip_render</code>，做如下修改：</p>
-<pre><code class="bash">skip_render:
-  - &#39;tools/*&#39;
-  - &#39;tools/**&#39;
-</code></pre>
-<p>最后执行<code>hexo clean</code>和<code>hexo s -g </code>本地预览，检查无误后<code>hexo g -d</code>部署到服务器上即可。</p>
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><ul>
-<li><a target="_blank" rel="noopener" href="https://xiabor.com/2020/04/21/hexo3/#%E5%A6%82%E4%BD%95%E8%B7%B3%E8%BF%87hexo%E7%9A%84%E6%B8%B2%E6%9F%93">https://xiabor.com/2020/04/21/hexo3/#%E5%A6%82%E4%BD%95%E8%B7%B3%E8%BF%87hexo%E7%9A%84%E6%B8%B2%E6%9F%93</a></li>
-</ul>
-
+                
             </div>
             <hr/>
 
@@ -1736,7 +1696,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
             
                 &nbsp; | &nbsp;字数统计:&nbsp;
-                <span class="white-color">10.7k</span> 字
+                <span class="white-color">300</span> 字
             
 
             
