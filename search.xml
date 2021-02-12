@@ -17,7 +17,7 @@
     
     
     <entry>
-      <title>Hexo之渲染绕过</title>
+      <title>Java基础语法</title>
       <link href="posts/17fd92ae.html"/>
       <url>posts/17fd92ae.html</url>
       
@@ -26,16 +26,16 @@
       
       <categories>
           
-          <category> 博客篇 </category>
+          <category> Java </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Hexo </tag>
+            <tag> 分支结构 </tag>
             
-            <tag> 渲染绕过 </tag>
+            <tag> 循环结构 </tag>
             
         </tags>
       
@@ -75,7 +75,7 @@
     
     
     <entry>
-      <title>PicGo+GitHub 图床搭建</title>
+      <title>Java数组</title>
       <link href="posts/7a46f93c.html"/>
       <url>posts/7a46f93c.html</url>
       
@@ -84,16 +84,14 @@
       
       <categories>
           
-          <category> 博客篇 </category>
+          <category> Java </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> PicGo </tag>
-            
-            <tag> GitHub图床 </tag>
+            <tag> 数组 </tag>
             
         </tags>
       
