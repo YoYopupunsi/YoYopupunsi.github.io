@@ -1031,88 +1031,8 @@
 <p>​    操作方式</p>
 <p><img src="https://github.com/YoYopupunsi/PicGoImgbed/blob/main/posts/20210213143211.jpg?raw=true" alt="文档注释"></p>
 <p><img src="https://github.com/YoYopupunsi/PicGoImgbed/blob/main/posts/20210213143212.jpg?raw=true" alt="文档注释"></p>
-<pre><code class="java"> /**
- *HelloChina
- *@author YoYopupunsi
- *@version V1.0
- *11:19 2021/1/30 0030
- *备注：验证各类注释的注意事项
- */
-
-public class HelloChina &#123;
-    public static void main(String[] args)&#123;
-        System.out.println(&quot;你好，中国！&quot;);
-    &#125;
-&#125;
-//验证：单行和多行注释，被注释的文字，不会被JVM（java虚拟机）解释执行
-//验证：多行注释不允许嵌套使用
-//单行注释不会被JVM解释执行
-/*
-多行注释不会被JVM解释执行
- */
-
-/*验证：多行注释不允许嵌套使用
-你好中国
-HelloChina
-*/
-
-//java: 需要class, interface或enum,多行注释不允许嵌套使用
-</code></pre>
-<h3 id="开发第一个Java应用程序HelloWorld"><a href="#开发第一个Java应用程序HelloWorld" class="headerlink" title="开发第一个Java应用程序HelloWorld"></a>开发第一个Java应用程序HelloWorld</h3><pre><code class="java">public class one_code/*类名*/ &#123;/*类体*/
-    public static void main/*主方法名程序的入口*/(String[]args)&#123;/*主方法体*/
-        System.out.println(&quot;HelloWorld&quot;);//自动换行
-        System.out.print(&quot;我爱中国&quot;);//不换行
-        System.out.println(&quot;HelloChina&quot;);
-    &#125;
-&#125;
-/*对第一个程序HelloWorld总结：
-1.java程序编写-&gt;编译-&gt;运行的过程
-(1)编写：编写java代码保存.java结尾的源文件
-(2)编译：使用javac.exe命令编译java源文件生成.class的字节码文件,格式：javac 源文件名.java
-javac one_code.java，后缀.java为了检验源文件是否编写错误
-(3)运行：使用java.exe命令解释运行.class的字节码文件，格式：java 类
-java one_code jvm解释运行字节码文件
-
-2.class 类名&#123;类体&#125;  main()主方法名，程序的入口&#123;主方法体&#125;
-
-3. 输出语句：
-System.out.println():先输出数据，然后换行
-System.out.print():只输出数据
-
-4.每一行执行语句都以&quot;;&quot;结束
-在java语言规范中，分号代表一个语句的结束。
-所以，即使分号前面没有任何内容，那么一个分号其实也代表一个语句（空语句）。
-
-5.编译的过程：编译以后，会生成一个或多个字节码文件。
-字节码文件的文件名与java源文件中的类名相同
-
-6.关于作用域的理解
-(1)个人理解：‘&#123;&#125;’花括号‘&#123;’是作用域的起点，&#39;&#125;&#39;是作用域的终点.
-(2)百度：中间部分就是一个代码块，代码块决定其中定义的变量的作用域，
-代码块由若干语句组成，必须用大括号括起来，形成一个复合语句，
-多个复合语句可以嵌套在另外的一对大括号中形成更复杂的复合语句.
-说得简单点就是在哪个大括号中声明的变量其作用域就是该大括号范围内.
-代码块决定了变量的作用域，作用域决定了变量的“可见性”以及“存在时间”.
- */
-// 7.验证java源文件是否可以声明多个class？
-// 在一个java源文件中可以声明多个class。但是，只能最多有一个类声明为public的。
-// 而且要求声明为public的类的类名必须与源文件名相同。
-//
-
-/*public class he&#123;
-
-&#125;
-编译错误：类he是公共的，应在名为he.java的文件中声明
-
- */
-
-class woman&#123;
-
-&#125;
-class man&#123;
-
-&#125;
-</code></pre>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment"> *HelloChina</span></span><br><span class="line"><span class="comment"> *<span class="doctag">@author</span> YoYopupunsi</span></span><br><span class="line"><span class="comment"> *<span class="doctag">@version</span> V1.0</span></span><br><span class="line"><span class="comment"> *11:19 2021/1/30 0030</span></span><br><span class="line"><span class="comment"> *备注：验证各类注释的注意事项</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloChina</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;你好，中国！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//验证：单行和多行注释，被注释的文字，不会被JVM（java虚拟机）解释执行</span></span><br><span class="line"><span class="comment">//验证：多行注释不允许嵌套使用</span></span><br><span class="line"><span class="comment">//单行注释不会被JVM解释执行</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">多行注释不会被JVM解释执行</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*验证：多行注释不允许嵌套使用</span></span><br><span class="line"><span class="comment">你好中国</span></span><br><span class="line"><span class="comment">HelloChina</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//java: 需要class, interface或enum,多行注释不允许嵌套使用</span></span><br></pre></td></tr></table></figure></div>
+<h3 id="开发第一个Java应用程序HelloWorld"><a href="#开发第一个Java应用程序HelloWorld" class="headerlink" title="开发第一个Java应用程序HelloWorld"></a>开发第一个Java应用程序HelloWorld</h3><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">one_code</span>/*类名*/ </span>&#123;<span class="comment">/*类体*/</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> main<span class="comment">/*主方法名程序的入口*/</span>(String[]args)&#123;<span class="comment">/*主方法体*/</span></span><br><span class="line">        System.out.println(<span class="string">&quot;HelloWorld&quot;</span>);<span class="comment">//自动换行</span></span><br><span class="line">        System.out.print(<span class="string">&quot;我爱中国&quot;</span>);<span class="comment">//不换行</span></span><br><span class="line">        System.out.println(<span class="string">&quot;HelloChina&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*对第一个程序HelloWorld总结：</span></span><br><span class="line"><span class="comment">1.java程序编写-&gt;编译-&gt;运行的过程</span></span><br><span class="line"><span class="comment">(1)编写：编写java代码保存.java结尾的源文件</span></span><br><span class="line"><span class="comment">(2)编译：使用javac.exe命令编译java源文件生成.class的字节码文件,格式：javac 源文件名.java</span></span><br><span class="line"><span class="comment">javac one_code.java，后缀.java为了检验源文件是否编写错误</span></span><br><span class="line"><span class="comment">(3)运行：使用java.exe命令解释运行.class的字节码文件，格式：java 类</span></span><br><span class="line"><span class="comment">java one_code jvm解释运行字节码文件</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">2.class 类名&#123;类体&#125;  main()主方法名，程序的入口&#123;主方法体&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">3. 输出语句：</span></span><br><span class="line"><span class="comment">System.out.println():先输出数据，然后换行</span></span><br><span class="line"><span class="comment">System.out.print():只输出数据</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">4.每一行执行语句都以&quot;;&quot;结束</span></span><br><span class="line"><span class="comment">在java语言规范中，分号代表一个语句的结束。</span></span><br><span class="line"><span class="comment">所以，即使分号前面没有任何内容，那么一个分号其实也代表一个语句（空语句）。</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">5.编译的过程：编译以后，会生成一个或多个字节码文件。</span></span><br><span class="line"><span class="comment">字节码文件的文件名与java源文件中的类名相同</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">6.关于作用域的理解</span></span><br><span class="line"><span class="comment">(1)个人理解：‘&#123;&#125;’花括号‘&#123;’是作用域的起点，&#x27;&#125;&#x27;是作用域的终点.</span></span><br><span class="line"><span class="comment">(2)百度：中间部分就是一个代码块，代码块决定其中定义的变量的作用域，</span></span><br><span class="line"><span class="comment">代码块由若干语句组成，必须用大括号括起来，形成一个复合语句，</span></span><br><span class="line"><span class="comment">多个复合语句可以嵌套在另外的一对大括号中形成更复杂的复合语句.</span></span><br><span class="line"><span class="comment">说得简单点就是在哪个大括号中声明的变量其作用域就是该大括号范围内.</span></span><br><span class="line"><span class="comment">代码块决定了变量的作用域，作用域决定了变量的“可见性”以及“存在时间”.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="comment">// 7.验证java源文件是否可以声明多个class？</span></span><br><span class="line"><span class="comment">// 在一个java源文件中可以声明多个class。但是，只能最多有一个类声明为public的。</span></span><br><span class="line"><span class="comment">// 而且要求声明为public的类的类名必须与源文件名相同。</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*public class he&#123;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">编译错误：类he是公共的，应在名为he.java的文件中声明</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">woman</span></span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">man</span></span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 <h3 id="Java-Code-Style"><a href="#Java-Code-Style" class="headerlink" title="Java Code Style"></a>Java Code Style</h3><p>代码整洁之道(已整理，关于标识符)</p>
 <p>第2章 有意义的命名<br>2.1 介绍<br>软件中随处可见命名。我们给变量、函数、参数、类和包命名。我们给源代码及源代码所在目录命名<br>这么多命名要做，不妨做好它。下文列出了取个好名字的几条简单规则</p>
 <p>2.2 名副其实,见名知意<br>     变量名太随意，haha、list1、ok、theList 这些都没啥意义</p>
@@ -1204,82 +1124,11 @@ class man&#123;
 </ul>
 <p>​       <strong>同：都有生命周期</strong>     <strong>异：局部变量除形参外，需显式初始化</strong></p>
 <p><img src="https://github.com/YoYopupunsi/PicGoImgbed/blob/main/posts/20210213143213.png?raw=true" alt="变量的分类"></p>
-<h5 id="变量-代码："><a href="#变量-代码：" class="headerlink" title="变量-代码："></a>变量-代码：</h5><pre><code class="java">/**
- * @Author: YoYopupunsi
- * @Description:
- * @Date: Created in 11:00 2021/2/1 0001
- * @Modified By:
- */
-/*
-变量的使用
-1. java定义变量的格式：
-数据类型 变量名 = 变量值;
-数据类型 变量名;
-变量名 = 变量值;
-2. 说明：
-   ① 变量必须先声明，后使用
-   ② 变量都定义在其作用域内。在作用域内，它是有效的。换句话说，出了作用域，就失效了
-   ③ 同一个作用域内，不可以声明两个同名的变量
-
-*/
-public class variable_code &#123;
-    public static void main(String[] args) &#123;
-        //1.变量的定义(输入)
-        int Var = 10;
-        //2.变量的使用（输出）
-        System.out.println(Var);
-        //编译错误：使用Var之前并未定义过Var
-        //System.out.println(Var);
-        //3.变量的声明
-        //int Var;
-        //编译错误：使用Var之前并未赋值过Var
-        //System.out.println(Var);
-        //4.变量的赋值
-        //Var = 1001;
-        //编译不通过
-        //System.out.println(Var);
-        //5.不可以在同一个作用域内定义同名的变量
-        //int Var = 22;
-    &#125;
-&#125;
-</code></pre>
+<h5 id="变量-代码："><a href="#变量-代码：" class="headerlink" title="变量-代码："></a>变量-代码：</h5><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Author</span>: YoYopupunsi</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Description</span>:</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Date</span>: Created in 11:00 2021/2/1 0001</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Modified</span> By:</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">变量的使用</span></span><br><span class="line"><span class="comment">1. java定义变量的格式：</span></span><br><span class="line"><span class="comment">数据类型 变量名 = 变量值;</span></span><br><span class="line"><span class="comment">数据类型 变量名;</span></span><br><span class="line"><span class="comment">变量名 = 变量值;</span></span><br><span class="line"><span class="comment">2. 说明：</span></span><br><span class="line"><span class="comment">   ① 变量必须先声明，后使用</span></span><br><span class="line"><span class="comment">   ② 变量都定义在其作用域内。在作用域内，它是有效的。换句话说，出了作用域，就失效了</span></span><br><span class="line"><span class="comment">   ③ 同一个作用域内，不可以声明两个同名的变量</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">variable_code</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//1.变量的定义(输入)</span></span><br><span class="line">        <span class="keyword">int</span> Var = <span class="number">10</span>;</span><br><span class="line">        <span class="comment">//2.变量的使用（输出）</span></span><br><span class="line">        System.out.println(Var);</span><br><span class="line">        <span class="comment">//编译错误：使用Var之前并未定义过Var</span></span><br><span class="line">        <span class="comment">//System.out.println(Var);</span></span><br><span class="line">        <span class="comment">//3.变量的声明</span></span><br><span class="line">        <span class="comment">//int Var;</span></span><br><span class="line">        <span class="comment">//编译错误：使用Var之前并未赋值过Var</span></span><br><span class="line">        <span class="comment">//System.out.println(Var);</span></span><br><span class="line">        <span class="comment">//4.变量的赋值</span></span><br><span class="line">        <span class="comment">//Var = 1001;</span></span><br><span class="line">        <span class="comment">//编译不通过</span></span><br><span class="line">        <span class="comment">//System.out.println(Var);</span></span><br><span class="line">        <span class="comment">//5.不可以在同一个作用域内定义同名的变量</span></span><br><span class="line">        <span class="comment">//int Var = 22;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 <h5 id="案例题目："><a href="#案例题目：" class="headerlink" title="案例题目："></a><strong>案例题目：</strong></h5><p>• 提示用户从键盘输入自己的姓名和年龄信息并打印出来</p>
-<pre><code class="java">
-/**
- * @Author: YoYopupunsi
- * @Description:
- * @Date: Created in 12:16 2021/2/1 0001
- * @Modified By:
- */
-/*
-* 变量案例：提示用户从键盘输入自己的姓名和年龄信息并打印出来
-*分析：
-*1.声明两个变量用于记录姓名和年龄信息
-*2.提示用户从键盘输入姓名和年龄信息并放入到变量中   变量随使用随声明
-*3.打印变量的数值     尽可能减少重复的代码
-* */
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Author</span>: YoYopupunsi</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Description</span>:</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Date</span>: Created in 12:16 2021/2/1 0001</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Modified</span> By:</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* 变量案例：提示用户从键盘输入自己的姓名和年龄信息并打印出来</span></span><br><span class="line"><span class="comment">*分析：</span></span><br><span class="line"><span class="comment">*1.声明两个变量用于记录姓名和年龄信息</span></span><br><span class="line"><span class="comment">*2.提示用户从键盘输入姓名和年龄信息并放入到变量中   变量随使用随声明</span></span><br><span class="line"><span class="comment">*3.打印变量的数值     尽可能减少重复的代码</span></span><br><span class="line"><span class="comment">* */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">VariableCase_1</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 1.声明两个变量用于记录姓名和年龄信息</span></span><br><span class="line">        <span class="comment">//String name;</span></span><br><span class="line">        <span class="comment">//int age;</span></span><br><span class="line">        <span class="comment">// 2.提示用户从键盘输入姓名和年龄信息并放入到变量中</span></span><br><span class="line">        System.out.println(<span class="string">&quot;请输入您的姓名：&quot;</span>);</span><br><span class="line">        <span class="comment">// 创建一个扫描器来扫描键盘输入的内容  System.in代表键盘输入</span></span><br><span class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="comment">// 通过扫描器读取一个字符串数据放入变量name中</span></span><br><span class="line">        String name = sc.next();</span><br><span class="line">        System.out.println(<span class="string">&quot;请输入您的年龄：&quot;</span>);</span><br><span class="line">        Scanner sc1 = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="comment">// 通过扫描器读取一个整数数据放入变量age中</span></span><br><span class="line">        <span class="keyword">int</span> age = sc1.nextInt();</span><br><span class="line">        <span class="comment">// 3.打印变量的数值</span></span><br><span class="line">        System.out.println(<span class="string">&quot; 姓名： &quot;</span> + name + <span class="string">&quot;\n 年龄： &quot;</span> + age);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
-import java.util.Scanner;
-public class VariableCase_1 &#123;
-    public static void main(String[] args) &#123;
-        // 1.声明两个变量用于记录姓名和年龄信息
-        //String name;
-        //int age;
-        // 2.提示用户从键盘输入姓名和年龄信息并放入到变量中
-        System.out.println(&quot;请输入您的姓名：&quot;);
-        // 创建一个扫描器来扫描键盘输入的内容  System.in代表键盘输入
-        Scanner sc = new Scanner(System.in);
-        // 通过扫描器读取一个字符串数据放入变量name中
-        String name = sc.next();
-        System.out.println(&quot;请输入您的年龄：&quot;);
-        Scanner sc1 = new Scanner(System.in);
-        // 通过扫描器读取一个整数数据放入变量age中
-        int age = sc1.nextInt();
-        // 3.打印变量的数值
-        System.out.println(&quot; 姓名： &quot; + name + &quot;\n 年龄： &quot; + age);
-    &#125;
-&#125;
-</code></pre>
+
 <h3 id="数据类型的分类"><a href="#数据类型的分类" class="headerlink" title="数据类型的分类"></a>数据类型的分类</h3><p><img src="https://github.com/YoYopupunsi/PicGoImgbed/blob/main/posts/20210213143214.png?raw=true"></p>
 <h4 id="一、进制"><a href="#一、进制" class="headerlink" title="一、进制"></a>一、进制</h4><p><img src="https://github.com/YoYopupunsi/PicGoImgbed/blob/main/posts/20210213143215.png?raw=true"></p>
 <ul>
@@ -1315,55 +1164,10 @@ public class VariableCase_1 &#123;
 <li><p>强制数据类型转换：表示将变量i的数值赋值给变量s，并覆盖变量s中原来的数值，相当于从int类型到short类型的转换，大到小强制转换（精度会有损失）</p>
 </li>
 <li><p>相关代码</p>
-<pre><code class="java">/**
- * @Author: YoYopupunsi
- * @Description:
- * @Date: Created in 10:56 2021/2/2 0002
- * @Modified By:
- */
-public class DataTypeConversion &#123;
-    public static void main(String[] args)&#123;
-        //1.首先声明变量接收各个数据类型
-        byte b = 1;
-        short s = 12;
-        int i = 127;
-        long l = 1234567891011L;
-        char c = &#39;a&#39;;
-        boolean bo1 = true;
-        boolean bo2 = false;
-        float f = 3.14159f;
-        double d = 3.141592653545;
-        //2.先打印各个数据类型的值
-        System.out.println(&quot;b的值为：&quot; + b);//127
-        System.out.println(&quot;s的值为：&quot; + s);//32767
-        System.out.println(&quot;i的值为：&quot; + i);//388883
-        System.out.println(&quot;l的值为：&quot; + l);//1234567891011L
-        System.out.println(&quot;c的值为：&quot; + c);//a
-        System.out.println(&quot;bo1的值为：&quot; + bo1);//true
-        System.out.println(&quot;bo2的值为：&quot; + bo2);//false
-        System.out.println(&quot;f的值为：&quot; + f);//3.14159
-        System.out.println(&quot;d的值为：&quot; + d);//3.141592653545
-        //3.首先测试自动数据类型转换：表示将变量b的数值赋值给变量s，并覆盖变量s中原来的数值，相当于从byte类型到short类型的转换，小到大自动转换
-        s = b;//
-        System.out.println(&quot;b的值为：&quot; + b);//1
-        System.out.println(&quot;s的值为：&quot; + s);//1
-        i =s;
-        System.out.println(&quot;i的值为：&quot; + i);//1
-        System.out.println(&quot;s的值为：&quot; + s);//1
-        //4.测试强制数据类型转换：表示将变量i的数值赋值给变量s，并覆盖变量s中原来的数值，相当于从int类型到short类型的转换，大到小强制转换
-        //s = i;//java: 不兼容的类型: 从int转换到short可能会有损失
-        //正确格式：
-        i = 127;
-        s = (short) i;
-        System.out.println(&quot;i的值为：&quot; + i);
-        System.out.println(&quot;s的值为：&quot; + s);
-        System.out.println(&quot;s的值为：&quot; + (int) s);
-    &#125;
-&#125;
-</code></pre>
-</li>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Author</span>: YoYopupunsi</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Description</span>:</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Date</span>: Created in 10:56 2021/2/2 0002</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Modified</span> By:</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DataTypeConversion</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="comment">//1.首先声明变量接收各个数据类型</span></span><br><span class="line">        <span class="keyword">byte</span> b = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">short</span> s = <span class="number">12</span>;</span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">127</span>;</span><br><span class="line">        <span class="keyword">long</span> l = <span class="number">1234567891011L</span>;</span><br><span class="line">        <span class="keyword">char</span> c = <span class="string">&#x27;a&#x27;</span>;</span><br><span class="line">        <span class="keyword">boolean</span> bo1 = <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">boolean</span> bo2 = <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">float</span> f = <span class="number">3.14159f</span>;</span><br><span class="line">        <span class="keyword">double</span> d = <span class="number">3.141592653545</span>;</span><br><span class="line">        <span class="comment">//2.先打印各个数据类型的值</span></span><br><span class="line">        System.out.println(<span class="string">&quot;b的值为：&quot;</span> + b);<span class="comment">//127</span></span><br><span class="line">        System.out.println(<span class="string">&quot;s的值为：&quot;</span> + s);<span class="comment">//32767</span></span><br><span class="line">        System.out.println(<span class="string">&quot;i的值为：&quot;</span> + i);<span class="comment">//388883</span></span><br><span class="line">        System.out.println(<span class="string">&quot;l的值为：&quot;</span> + l);<span class="comment">//1234567891011L</span></span><br><span class="line">        System.out.println(<span class="string">&quot;c的值为：&quot;</span> + c);<span class="comment">//a</span></span><br><span class="line">        System.out.println(<span class="string">&quot;bo1的值为：&quot;</span> + bo1);<span class="comment">//true</span></span><br><span class="line">        System.out.println(<span class="string">&quot;bo2的值为：&quot;</span> + bo2);<span class="comment">//false</span></span><br><span class="line">        System.out.println(<span class="string">&quot;f的值为：&quot;</span> + f);<span class="comment">//3.14159</span></span><br><span class="line">        System.out.println(<span class="string">&quot;d的值为：&quot;</span> + d);<span class="comment">//3.141592653545</span></span><br><span class="line">        <span class="comment">//3.首先测试自动数据类型转换：表示将变量b的数值赋值给变量s，并覆盖变量s中原来的数值，相当于从byte类型到short类型的转换，小到大自动转换</span></span><br><span class="line">        s = b;<span class="comment">//</span></span><br><span class="line">        System.out.println(<span class="string">&quot;b的值为：&quot;</span> + b);<span class="comment">//1</span></span><br><span class="line">        System.out.println(<span class="string">&quot;s的值为：&quot;</span> + s);<span class="comment">//1</span></span><br><span class="line">        i =s;</span><br><span class="line">        System.out.println(<span class="string">&quot;i的值为：&quot;</span> + i);<span class="comment">//1</span></span><br><span class="line">        System.out.println(<span class="string">&quot;s的值为：&quot;</span> + s);<span class="comment">//1</span></span><br><span class="line">        <span class="comment">//4.测试强制数据类型转换：表示将变量i的数值赋值给变量s，并覆盖变量s中原来的数值，相当于从int类型到short类型的转换，大到小强制转换</span></span><br><span class="line">        <span class="comment">//s = i;//java: 不兼容的类型: 从int转换到short可能会有损失</span></span><br><span class="line">        <span class="comment">//正确格式：</span></span><br><span class="line">        i = <span class="number">127</span>;</span><br><span class="line">        s = (<span class="keyword">short</span>) i;</span><br><span class="line">        System.out.println(<span class="string">&quot;i的值为：&quot;</span> + i);</span><br><span class="line">        System.out.println(<span class="string">&quot;s的值为：&quot;</span> + s);</span><br><span class="line">        System.out.println(<span class="string">&quot;s的值为：&quot;</span> + (<span class="keyword">int</span>) s);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3></li>
 </ul>
-<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><h4 id="一-算术运算符"><a href="#一-算术运算符" class="headerlink" title="一.算术运算符"></a>一.算术运算符</h4><p>• + 表示加法运算符</p>
+<h4 id="一-算术运算符"><a href="#一-算术运算符" class="headerlink" title="一.算术运算符"></a>一.算术运算符</h4><p>• + 表示加法运算符</p>
 <p>• - 表示减法运算符</p>
 <p>• * 表示乘法运算符</p>
 <p>• / 表示除法运算符</p>
@@ -1378,67 +1182,7 @@ public class DataTypeConversion &#123;
 <p>结论：整数之间做除法时，只保留整数部分而舍弃小数部分，整数与小数相除的结果为小数，小数除的结果为小数</p>
 <p>*<em><u>4.=  +=   -=   <em>=  /=  %=   里面隐藏了强制类型转换</u></em></em></p>
 <p>byte x += 10;     —&gt; x = (byte)(x + 10);</p>
-<h5 id="案例题目-提示用户输入正整数类型的秒数，拆分秒数后输出x小时x分x秒。-如：输入xxxx，输出x小时x分x秒。"><a href="#案例题目-提示用户输入正整数类型的秒数，拆分秒数后输出x小时x分x秒。-如：输入xxxx，输出x小时x分x秒。" class="headerlink" title="**案例题目:**提示用户输入正整数类型的秒数，拆分秒数后输出x小时x分x秒。 如：输入xxxx，输出x小时x分x秒。"></a>**案例题目:**提示用户输入正整数类型的秒数，拆分秒数后输出x小时x分x秒。 如：输入xxxx，输出x小时x分x秒。</h5><pre><code class="java">import java.util.Scanner;
-public class ArithmeticOperatorsAndCases &#123;
-    public static void main(String[] args) &#123;
-        //算术运算学习：
-        //1.声明两个int变量并初始化
-        //int Ari1
-        //int Ari2
-        int Ari1 = 20, Ari2 = 10;
-        //分别为+ - * / %
-        int Add = Ari1 + Ari2;//声明一个变量Add记录Ari1，Ari2的和
-        int Sub = Ari1 - Ari2;//声明一个变量Sub记录Ari1，Ari2的差
-        int Mul = Ari1 * Ari2;//声明一个变量Mul记录Ari1，Ari2的乘积
-        int Div = Ari1 / Ari2;//声明一个变量Div记录Ari1，Ari2的除法
-        int Sur = Ari1 % Ari2;//声明一个变量Sur记录Ari1，Ari2的取余
-        System.out.println(&quot;Ari1，Ari2的和为：&quot; + Add + &quot;\nAri1，Ari2的差为：&quot; + Sub + &quot;\nAri1，Ari2的乘积为：&quot; + Mul + &quot;\nAri1，Ari2的除法为：&quot; + Div + &quot;\nAri1，Ari2的取余为：&quot; + Sur);
-        //Ari1，Ari2的和为：30  Ari1，Ari2的差为：10  Ari1，Ari2的乘积为：200  Ari1，Ari2的除法为：2  Ari1，Ari2的取余为：0
-        //若希望保留小数部分该如何处理？
-        //处理方式一：使用强制类型转换将其中一个操作数转换为double类型再运算即可
-        System.out.println(&quot;Ari1，Ari2的和为：&quot; + (double)Add);
-        //处理方式二：使用 变量*1.0 打印即可
-        System.out.println(&quot;Ari1，Ari2的和为：&quot; + Add*1.0);
-        //算术运算符中%能对负数取模吗？取模一定为正数吗？验证：
-        //1.首先声明并赋值两个整数型的变量记录
-        int Sur1 = 5,Sur2 = -2;
-        //2.声明一个变量Sur3记录Sur1，Sur2的取模
-        int Sur3 = Sur1 % Sur2;
-        System.out.println(&quot;Sur1，Sur2的取模为:&quot; + Sur3);//Sur1，Sur2的取模为:1
-        //3.声明一个变量Sur4记录Sur1，Sur2的取模
-        int Sur4 = Sur2 % Sur1;
-        System.out.println(&quot;Sur1，Sur2的取模为:&quot; + Sur4);//Sur1，Sur2的取模为:-2
-        //4.声明并赋值两个整数型的变量记录
-        int Sur5 = -5,Sur6 = 2;
-        //5.声明一个变量Sur8记录Sur5，Sur6的取模
-        int Sur7 = Sur5 % Sur6;
-        System.out.println(&quot;Sur5，Sur6的取模为:&quot; + Sur7);//Sur5，Sur6的取模为:-1
-        //6.声明一个变量Sur8记录Sur5，Sur6的取模
-        int Sur8 = Sur6 % Sur5;
-        System.out.println(&quot;Sur5，Sur6的取模为:&quot; + Sur8);//Sur5，Sur6的取模为:2
-        //结论：负数参与的取模运算规则：先忽略负号，按照正数运算之后，被取模的数是正数结果就取正，反之取负。（注：(-2)%5中被取模数是-2,(-5)%2中被取模数是-1）
-        //对于除号“/”，它的整数除和小数除的区别是什么？
-        double d = 10.2,e = 5.2;
-        int i=314;i=i/1000*1000;
-        System.out.println(&quot;double的除法:&quot; + d/e);//1.9615384615384612
-        System.out.println(&quot;double/int的除法:&quot; + d/Ari2);//1.02
-        System.out.println(&quot;i为:&quot; + i);//300
-        //结论：整数之间做除法时，只保留整数部分而舍弃小数部分，整数与小数相除的结果为小数，小数除的结果为小数。
-        //案例题目：• 提示用户输入正整数类型的秒数，拆分秒数后输出x小时x分x秒。• 如：输入xxxx，输出x小时x分x秒。
-        //1.提示用户输入正整数类型的秒数
-        System.out.println(&quot;请您输入正整数类型的秒数：&quot;);
-        //2.使用变量记录用户输入的正整数型的秒数
-        Scanner sc = new Scanner(System.in);
-        int Sec1 = sc.nextInt();
-        //3.将正整数的秒数拆分为时分秒后并使用变量记录
-        int Hour = Sec1 / 60 / 60;
-        int Minute = Sec1 % 3600 /60;
-        int Second = Sec1 % 60;
-        System.out.println(&quot;时间为：&quot; + Hour + &quot;小时&quot; + Minute + &quot;分钟&quot; + Second + &quot;秒&quot;);
-
-    &#125;
-&#125;
-</code></pre>
+<h5 id="案例题目-提示用户输入正整数类型的秒数，拆分秒数后输出x小时x分x秒。-如：输入xxxx，输出x小时x分x秒。"><a href="#案例题目-提示用户输入正整数类型的秒数，拆分秒数后输出x小时x分x秒。-如：输入xxxx，输出x小时x分x秒。" class="headerlink" title="**案例题目:**提示用户输入正整数类型的秒数，拆分秒数后输出x小时x分x秒。 如：输入xxxx，输出x小时x分x秒。"></a>**案例题目:**提示用户输入正整数类型的秒数，拆分秒数后输出x小时x分x秒。 如：输入xxxx，输出x小时x分x秒。</h5><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ArithmeticOperatorsAndCases</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//算术运算学习：</span></span><br><span class="line">        <span class="comment">//1.声明两个int变量并初始化</span></span><br><span class="line">        <span class="comment">//int Ari1</span></span><br><span class="line">        <span class="comment">//int Ari2</span></span><br><span class="line">        <span class="keyword">int</span> Ari1 = <span class="number">20</span>, Ari2 = <span class="number">10</span>;</span><br><span class="line">        <span class="comment">//分别为+ - * / %</span></span><br><span class="line">        <span class="keyword">int</span> Add = Ari1 + Ari2;<span class="comment">//声明一个变量Add记录Ari1，Ari2的和</span></span><br><span class="line">        <span class="keyword">int</span> Sub = Ari1 - Ari2;<span class="comment">//声明一个变量Sub记录Ari1，Ari2的差</span></span><br><span class="line">        <span class="keyword">int</span> Mul = Ari1 * Ari2;<span class="comment">//声明一个变量Mul记录Ari1，Ari2的乘积</span></span><br><span class="line">        <span class="keyword">int</span> Div = Ari1 / Ari2;<span class="comment">//声明一个变量Div记录Ari1，Ari2的除法</span></span><br><span class="line">        <span class="keyword">int</span> Sur = Ari1 % Ari2;<span class="comment">//声明一个变量Sur记录Ari1，Ari2的取余</span></span><br><span class="line">        System.out.println(<span class="string">&quot;Ari1，Ari2的和为：&quot;</span> + Add + <span class="string">&quot;\nAri1，Ari2的差为：&quot;</span> + Sub + <span class="string">&quot;\nAri1，Ari2的乘积为：&quot;</span> + Mul + <span class="string">&quot;\nAri1，Ari2的除法为：&quot;</span> + Div + <span class="string">&quot;\nAri1，Ari2的取余为：&quot;</span> + Sur);</span><br><span class="line">        <span class="comment">//Ari1，Ari2的和为：30  Ari1，Ari2的差为：10  Ari1，Ari2的乘积为：200  Ari1，Ari2的除法为：2  Ari1，Ari2的取余为：0</span></span><br><span class="line">        <span class="comment">//若希望保留小数部分该如何处理？</span></span><br><span class="line">        <span class="comment">//处理方式一：使用强制类型转换将其中一个操作数转换为double类型再运算即可</span></span><br><span class="line">        System.out.println(<span class="string">&quot;Ari1，Ari2的和为：&quot;</span> + (<span class="keyword">double</span>)Add);</span><br><span class="line">        <span class="comment">//处理方式二：使用 变量*1.0 打印即可</span></span><br><span class="line">        System.out.println(<span class="string">&quot;Ari1，Ari2的和为：&quot;</span> + Add*<span class="number">1.0</span>);</span><br><span class="line">        <span class="comment">//算术运算符中%能对负数取模吗？取模一定为正数吗？验证：</span></span><br><span class="line">        <span class="comment">//1.首先声明并赋值两个整数型的变量记录</span></span><br><span class="line">        <span class="keyword">int</span> Sur1 = <span class="number">5</span>,Sur2 = -<span class="number">2</span>;</span><br><span class="line">        <span class="comment">//2.声明一个变量Sur3记录Sur1，Sur2的取模</span></span><br><span class="line">        <span class="keyword">int</span> Sur3 = Sur1 % Sur2;</span><br><span class="line">        System.out.println(<span class="string">&quot;Sur1，Sur2的取模为:&quot;</span> + Sur3);<span class="comment">//Sur1，Sur2的取模为:1</span></span><br><span class="line">        <span class="comment">//3.声明一个变量Sur4记录Sur1，Sur2的取模</span></span><br><span class="line">        <span class="keyword">int</span> Sur4 = Sur2 % Sur1;</span><br><span class="line">        System.out.println(<span class="string">&quot;Sur1，Sur2的取模为:&quot;</span> + Sur4);<span class="comment">//Sur1，Sur2的取模为:-2</span></span><br><span class="line">        <span class="comment">//4.声明并赋值两个整数型的变量记录</span></span><br><span class="line">        <span class="keyword">int</span> Sur5 = -<span class="number">5</span>,Sur6 = <span class="number">2</span>;</span><br><span class="line">        <span class="comment">//5.声明一个变量Sur8记录Sur5，Sur6的取模</span></span><br><span class="line">        <span class="keyword">int</span> Sur7 = Sur5 % Sur6;</span><br><span class="line">        System.out.println(<span class="string">&quot;Sur5，Sur6的取模为:&quot;</span> + Sur7);<span class="comment">//Sur5，Sur6的取模为:-1</span></span><br><span class="line">        <span class="comment">//6.声明一个变量Sur8记录Sur5，Sur6的取模</span></span><br><span class="line">        <span class="keyword">int</span> Sur8 = Sur6 % Sur5;</span><br><span class="line">        System.out.println(<span class="string">&quot;Sur5，Sur6的取模为:&quot;</span> + Sur8);<span class="comment">//Sur5，Sur6的取模为:2</span></span><br><span class="line">        <span class="comment">//结论：负数参与的取模运算规则：先忽略负号，按照正数运算之后，被取模的数是正数结果就取正，反之取负。（注：(-2)%5中被取模数是-2,(-5)%2中被取模数是-1）</span></span><br><span class="line">        <span class="comment">//对于除号“/”，它的整数除和小数除的区别是什么？</span></span><br><span class="line">        <span class="keyword">double</span> d = <span class="number">10.2</span>,e = <span class="number">5.2</span>;</span><br><span class="line">        <span class="keyword">int</span> i=<span class="number">314</span>;i=i/<span class="number">1000</span>*<span class="number">1000</span>;</span><br><span class="line">        System.out.println(<span class="string">&quot;double的除法:&quot;</span> + d/e);<span class="comment">//1.9615384615384612</span></span><br><span class="line">        System.out.println(<span class="string">&quot;double/int的除法:&quot;</span> + d/Ari2);<span class="comment">//1.02</span></span><br><span class="line">        System.out.println(<span class="string">&quot;i为:&quot;</span> + i);<span class="comment">//300</span></span><br><span class="line">        <span class="comment">//结论：整数之间做除法时，只保留整数部分而舍弃小数部分，整数与小数相除的结果为小数，小数除的结果为小数。</span></span><br><span class="line">        <span class="comment">//案例题目：• 提示用户输入正整数类型的秒数，拆分秒数后输出x小时x分x秒。• 如：输入xxxx，输出x小时x分x秒。</span></span><br><span class="line">        <span class="comment">//1.提示用户输入正整数类型的秒数</span></span><br><span class="line">        System.out.println(<span class="string">&quot;请您输入正整数类型的秒数：&quot;</span>);</span><br><span class="line">        <span class="comment">//2.使用变量记录用户输入的正整数型的秒数</span></span><br><span class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">int</span> Sec1 = sc.nextInt();</span><br><span class="line">        <span class="comment">//3.将正整数的秒数拆分为时分秒后并使用变量记录</span></span><br><span class="line">        <span class="keyword">int</span> Hour = Sec1 / <span class="number">60</span> / <span class="number">60</span>;</span><br><span class="line">        <span class="keyword">int</span> Minute = Sec1 % <span class="number">3600</span> /<span class="number">60</span>;</span><br><span class="line">        <span class="keyword">int</span> Second = Sec1 % <span class="number">60</span>;</span><br><span class="line">        System.out.println(<span class="string">&quot;时间为：&quot;</span> + Hour + <span class="string">&quot;小时&quot;</span> + Minute + <span class="string">&quot;分钟&quot;</span> + Second + <span class="string">&quot;秒&quot;</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
 <h4 id="三、关系-比较运算符"><a href="#三、关系-比较运算符" class="headerlink" title="三、关系/比较运算符"></a>三、关系/比较运算符</h4><p>• &gt; 表示是否大于运算符 </p>
 <p>&gt;= 表示是否大于等于运算符</p>
 <p>• &lt; 表示是否小于运算符 </p>
@@ -1447,39 +1191,7 @@ public class ArithmeticOperatorsAndCases &#123;
 <p>!= 表示是否不等于运算符</p>
 <p>• 所有以关系运算符作为最终运算的表达式结果一定是boolean类型。</p>
 <p>相关代码：</p>
-<pre><code class="java">/**
- * @Author: YoYopupunsi
- * @Description:
- * @Date: Created in 2:26 2021/2/3 0003
- * @Modified By:
- */
-import java.util.Scanner;
-public class ComparisonOperatorsAndCases &#123;
-    public static void main(String[] args)&#123;
-        // 1.声明两个int类型的变量并初始化
-        int i = 5;
-        int j = 2;
-        // 2.使用变量实现关系运算符的使用并打印结果
-        boolean k = i &gt; j;
-        System.out.println(&quot;k = &quot; + k); // k = true
-        System.out.println(i &gt; j);   // 是否大于      true
-        System.out.println(i &gt;= j);  // 是否大于或等于 true
-        System.out.println(i &lt; j);   // 是否小于    false
-        System.out.println(i &lt;= j);  // 是否小于等于 false
-        System.out.println(i == j);  // 是否等于    false
-        System.out.println(i != j);  // 是否不等于  true
-        //1.请用户输入一个整数
-        System.out.println(&quot;请您输入一个整数：&quot;);
-        Scanner sc = new Scanner(System.in);
-        //2.声明一个变量记录用户输入的整数
-        int l = sc.nextInt();
-        //3.声明一个布尔类型的变量判断正负
-        boolean d = l&lt;0;
-        System.out.println(&quot;d=&quot;+ d);
-        System.out.println(l&lt;0);
-    &#125;
-&#125;
-</code></pre>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Author</span>: YoYopupunsi</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Description</span>:</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Date</span>: Created in 2:26 2021/2/3 0003</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Modified</span> By:</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ComparisonOperatorsAndCases</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="comment">// 1.声明两个int类型的变量并初始化</span></span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">5</span>;</span><br><span class="line">        <span class="keyword">int</span> j = <span class="number">2</span>;</span><br><span class="line">        <span class="comment">// 2.使用变量实现关系运算符的使用并打印结果</span></span><br><span class="line">        <span class="keyword">boolean</span> k = i &gt; j;</span><br><span class="line">        System.out.println(<span class="string">&quot;k = &quot;</span> + k); <span class="comment">// k = true</span></span><br><span class="line">        System.out.println(i &gt; j);   <span class="comment">// 是否大于      true</span></span><br><span class="line">        System.out.println(i &gt;= j);  <span class="comment">// 是否大于或等于 true</span></span><br><span class="line">        System.out.println(i &lt; j);   <span class="comment">// 是否小于    false</span></span><br><span class="line">        System.out.println(i &lt;= j);  <span class="comment">// 是否小于等于 false</span></span><br><span class="line">        System.out.println(i == j);  <span class="comment">// 是否等于    false</span></span><br><span class="line">        System.out.println(i != j);  <span class="comment">// 是否不等于  true</span></span><br><span class="line">        <span class="comment">//1.请用户输入一个整数</span></span><br><span class="line">        System.out.println(<span class="string">&quot;请您输入一个整数：&quot;</span>);</span><br><span class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="comment">//2.声明一个变量记录用户输入的整数</span></span><br><span class="line">        <span class="keyword">int</span> l = sc.nextInt();</span><br><span class="line">        <span class="comment">//3.声明一个布尔类型的变量判断正负</span></span><br><span class="line">        <span class="keyword">boolean</span> d = l&lt;<span class="number">0</span>;</span><br><span class="line">        System.out.println(<span class="string">&quot;d=&quot;</span>+ d);</span><br><span class="line">        System.out.println(l&lt;<span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
 <h4 id="四、自增减运算符"><a href="#四、自增减运算符" class="headerlink" title="四、自增减运算符"></a>四、自增减运算符</h4><ul>
 <li><p>++a</p>
 <pre><code>自增（前）：先运算后取值
@@ -1509,57 +1221,7 @@ public class ComparisonOperatorsAndCases &#123;
 <li><p><img src="https://github.com/YoYopupunsi/PicGoImgbed/blob/main/posts/20210213143847.png?raw=true"></p>
 </li>
 <li><p>相关代码</p>
-<pre><code class="java">public class SelfTest &#123;
-public static void main(String[] args) &#123;
-        // 1.声明一个int类型的变量并初始化
-        int ia = 10;
-        // 2.打印变量的数值
-        System.out.println(&quot;ia = &quot; + ia); // ia = 10
-        
-        System.out.println(&quot;---------------------------------------------&quot;);
-        // 3.实现自增减运算符的使用
-        // 表示让变量ia自身的数值加1，并覆盖该变量原来的数值   
-        ia++;   // ia = ia + 1;
-        System.out.println(&quot;ia = &quot; + ia); // ia = 11
-        
-        // 表示让变量ia自身的数值加1，并覆盖该变量原来的数值  
-        ++ia;
-        System.out.println(&quot;ia = &quot; + ia); // ia = 12
-        
-        // 表示让变量ia自身的数值减1，并覆盖该变量原来的数值
-        --ia;
-        System.out.println(&quot;ia = &quot; + ia); // ia = 11
-        
-        ia--;
-        System.out.println(&quot;ia = &quot; + ia); // ia = 10
-        
-        System.out.println(&quot;---------------------------------------------&quot;);
-        // 4.简单的变换
-        // 其中ia++这个整体叫做表达式   其中ia叫做操作数/变量       也就是ia++和ia表示不同的含义，因此所占的内存空间应该不同
-        // 下面的代码是在打印表达式的结果
-        // 后++表示先让变量ia的数值作为整个表达式的最终结果，然后再让ia变量自身的数值加1
-        System.out.println(ia++);         // 10
-        System.out.println(&quot;ia = &quot; + ia); // 11
-        // 前++表示先让变量自身的数值加1，然后再让变量的数值作为整个表达式的结果
-        System.out.println(++ia);         // 12
-        System.out.println(&quot;ia = &quot; + ia); // 12
-        
-        System.out.println(&quot;---------------------------------------------&quot;);
-        // 5.笔试考点
-        int ib = ia++;
-        System.out.println(&quot;ib = &quot; + ib); // 12
-        System.out.println(&quot;ia = &quot; + ia); // 13
-        int ic = ++ia;
-        System.out.println(&quot;ic = &quot; + ic); // 14
-        System.out.println(&quot;ia = &quot; + ia); // 14
-        
-        //                  14  + 16
-        System.out.println(ia++ + ++ia);  // 30
-        System.out.println(&quot;ia = &quot; + ia); // 16
-        
-    &#125;
-&#125;
-</code></pre>
+  <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SelfTest</span> </span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 1.声明一个int类型的变量并初始化</span></span><br><span class="line">		<span class="keyword">int</span> ia = <span class="number">10</span>;</span><br><span class="line">		<span class="comment">// 2.打印变量的数值</span></span><br><span class="line">		System.out.println(<span class="string">&quot;ia = &quot;</span> + ia); <span class="comment">// ia = 10</span></span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">&quot;---------------------------------------------&quot;</span>);</span><br><span class="line">		<span class="comment">// 3.实现自增减运算符的使用</span></span><br><span class="line">		<span class="comment">// 表示让变量ia自身的数值加1，并覆盖该变量原来的数值   </span></span><br><span class="line">		ia++;   <span class="comment">// ia = ia + 1;</span></span><br><span class="line">		System.out.println(<span class="string">&quot;ia = &quot;</span> + ia); <span class="comment">// ia = 11</span></span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 表示让变量ia自身的数值加1，并覆盖该变量原来的数值  </span></span><br><span class="line">		++ia;</span><br><span class="line">		System.out.println(<span class="string">&quot;ia = &quot;</span> + ia); <span class="comment">// ia = 12</span></span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 表示让变量ia自身的数值减1，并覆盖该变量原来的数值</span></span><br><span class="line">		--ia;</span><br><span class="line">		System.out.println(<span class="string">&quot;ia = &quot;</span> + ia); <span class="comment">// ia = 11</span></span><br><span class="line">		</span><br><span class="line">		ia--;</span><br><span class="line">		System.out.println(<span class="string">&quot;ia = &quot;</span> + ia); <span class="comment">// ia = 10</span></span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">&quot;---------------------------------------------&quot;</span>);</span><br><span class="line">		<span class="comment">// 4.简单的变换</span></span><br><span class="line">		<span class="comment">// 其中ia++这个整体叫做表达式   其中ia叫做操作数/变量       也就是ia++和ia表示不同的含义，因此所占的内存空间应该不同</span></span><br><span class="line">		<span class="comment">// 下面的代码是在打印表达式的结果</span></span><br><span class="line">		<span class="comment">// 后++表示先让变量ia的数值作为整个表达式的最终结果，然后再让ia变量自身的数值加1</span></span><br><span class="line">		System.out.println(ia++);         <span class="comment">// 10</span></span><br><span class="line">		System.out.println(<span class="string">&quot;ia = &quot;</span> + ia); <span class="comment">// 11</span></span><br><span class="line">		<span class="comment">// 前++表示先让变量自身的数值加1，然后再让变量的数值作为整个表达式的结果</span></span><br><span class="line">		System.out.println(++ia);         <span class="comment">// 12</span></span><br><span class="line">		System.out.println(<span class="string">&quot;ia = &quot;</span> + ia); <span class="comment">// 12</span></span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">&quot;---------------------------------------------&quot;</span>);</span><br><span class="line">		<span class="comment">// 5.笔试考点</span></span><br><span class="line">		<span class="keyword">int</span> ib = ia++;</span><br><span class="line">		System.out.println(<span class="string">&quot;ib = &quot;</span> + ib); <span class="comment">// 12</span></span><br><span class="line">		System.out.println(<span class="string">&quot;ia = &quot;</span> + ia); <span class="comment">// 13</span></span><br><span class="line">		<span class="keyword">int</span> ic = ++ia;</span><br><span class="line">		System.out.println(<span class="string">&quot;ic = &quot;</span> + ic); <span class="comment">// 14</span></span><br><span class="line">		System.out.println(<span class="string">&quot;ia = &quot;</span> + ia); <span class="comment">// 14</span></span><br><span class="line">		</span><br><span class="line">		<span class="comment">//                  14  + 16</span></span><br><span class="line">		System.out.println(ia++ + ++ia);  <span class="comment">// 30</span></span><br><span class="line">		System.out.println(<span class="string">&quot;ia = &quot;</span> + ia); <span class="comment">// 16</span></span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 </li>
 </ul>
 <h4 id="五、逻辑运算符"><a href="#五、逻辑运算符" class="headerlink" title="五、逻辑运算符"></a>五、逻辑运算符</h4><p>逻辑运算符的操作数均为boolean表达式</p>
@@ -1571,167 +1233,18 @@ public static void main(String[] args) &#123;
 <p>​    作用： </p>
 <p>1、由于&amp;&amp;和||的表达式存在短路运算现象，在短路之后不会对后面的表达式进行运算，所以含有&amp;&amp;和||的表达式最好不要进行变量的赋值和运算操作，可以先计算好每个表达式的结果，直接拿结果进行&amp;&amp;和||的运算<br>2、在代码编写的时候就要注意这一点，以防由于&amp;&amp;和||的短路运算导致写出来的代码运算结果与预期的不同<br>3、把能快速确定整个表达式结果true或false的表达式放在前面，这样由于短路运算后面的表达式可能不会被运算到，节省处理器的运算时间</p>
 <p>相关代码：</p>
-<pre><code class="java">/**
- * @Author: YoYopupunsi
- * @Description:
- * @Date: Created in 13:17 2021/2/3 0003
- * @Modified By:
- */
-import java.util.Scanner;
-public class LogicalOperators &#123;
-    public static void main(String [] args)&#123;
-        // 1.声明两个boolean类型的变量并初始化
-        boolean b1 = true;
-        boolean b2 = false;
-        // 2.打印变量的数值
-        System.out.println(&quot;b1 = &quot; + b1); // b1 = true
-        System.out.println(&quot;b2 = &quot; + b2); // b2 = false
-        // 3.使用上述变量实现逻辑运算符的使用
-        boolean b3 = b1 &amp;&amp; b2;
-        System.out.println(&quot;b3 = &quot; + b3); // false
-        System.out.println(b1 &amp;&amp; b2); // false   并且
-        System.out.println(b1 || b2); // true    或者
-        System.out.println(!b1);  // false       取反
-        System.out.println(!b2);  // true
-        // 4.测试一下短路特性
-        int ia = 3;
-        int ib = 5;
-        // 对于逻辑与运算符来说，若第一个条件为假则整个表达式为假，此时跳过第二个表达式不执行
-        boolean b4 = (++ia == 3) &amp;&amp; (++ib == 5);
-        System.out.println(&quot;b4 = &quot; + b4); // false
-        System.out.println(&quot;ia = &quot; + ia); // 4
-        System.out.println(&quot;ib = &quot; + ib); // 5
-        // 对于逻辑或运算符来说，若第一个条件为真则整个表达式为真，此时跳过第二个表达式不执行
-        boolean b5 = (++ia == 5) || (++ib == 5);
-        System.out.println(&quot;b5 = &quot; + b5); // true
-        System.out.println(&quot;ia = &quot; + ia); // 5
-        System.out.println(&quot;ib = &quot; + ib); // 5
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Author</span>: YoYopupunsi</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Description</span>:</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Date</span>: Created in 13:17 2021/2/3 0003</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Modified</span> By:</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LogicalOperators</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String [] args)</span></span>&#123;</span><br><span class="line">        <span class="comment">// 1.声明两个boolean类型的变量并初始化</span></span><br><span class="line">        <span class="keyword">boolean</span> b1 = <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">boolean</span> b2 = <span class="keyword">false</span>;</span><br><span class="line">        <span class="comment">// 2.打印变量的数值</span></span><br><span class="line">        System.out.println(<span class="string">&quot;b1 = &quot;</span> + b1); <span class="comment">// b1 = true</span></span><br><span class="line">        System.out.println(<span class="string">&quot;b2 = &quot;</span> + b2); <span class="comment">// b2 = false</span></span><br><span class="line">        <span class="comment">// 3.使用上述变量实现逻辑运算符的使用</span></span><br><span class="line">        <span class="keyword">boolean</span> b3 = b1 &amp;&amp; b2;</span><br><span class="line">        System.out.println(<span class="string">&quot;b3 = &quot;</span> + b3); <span class="comment">// false</span></span><br><span class="line">        System.out.println(b1 &amp;&amp; b2); <span class="comment">// false   并且</span></span><br><span class="line">        System.out.println(b1 || b2); <span class="comment">// true    或者</span></span><br><span class="line">        System.out.println(!b1);  <span class="comment">// false       取反</span></span><br><span class="line">        System.out.println(!b2);  <span class="comment">// true</span></span><br><span class="line">        <span class="comment">// 4.测试一下短路特性</span></span><br><span class="line">        <span class="keyword">int</span> ia = <span class="number">3</span>;</span><br><span class="line">        <span class="keyword">int</span> ib = <span class="number">5</span>;</span><br><span class="line">        <span class="comment">// 对于逻辑与运算符来说，若第一个条件为假则整个表达式为假，此时跳过第二个表达式不执行</span></span><br><span class="line">        <span class="keyword">boolean</span> b4 = (++ia == <span class="number">3</span>) &amp;&amp; (++ib == <span class="number">5</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;b4 = &quot;</span> + b4); <span class="comment">// false</span></span><br><span class="line">        System.out.println(<span class="string">&quot;ia = &quot;</span> + ia); <span class="comment">// 4</span></span><br><span class="line">        System.out.println(<span class="string">&quot;ib = &quot;</span> + ib); <span class="comment">// 5</span></span><br><span class="line">        <span class="comment">// 对于逻辑或运算符来说，若第一个条件为真则整个表达式为真，此时跳过第二个表达式不执行</span></span><br><span class="line">        <span class="keyword">boolean</span> b5 = (++ia == <span class="number">5</span>) || (++ib == <span class="number">5</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;b5 = &quot;</span> + b5); <span class="comment">// true</span></span><br><span class="line">        System.out.println(<span class="string">&quot;ia = &quot;</span> + ia); <span class="comment">// 5</span></span><br><span class="line">        System.out.println(<span class="string">&quot;ib = &quot;</span> + ib); <span class="comment">// 5</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 1.提示用户输入一个正整数并使用变量记录</span></span><br><span class="line">        System.out.println(<span class="string">&quot;请输入一个正整数：&quot;</span>);</span><br><span class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">int</span> num = sc.nextInt();</span><br><span class="line">        <span class="comment">// 2.使用逻辑运算符判断是否为三位数并打印    &gt;= 100   &lt;= 999   &amp;&amp;</span></span><br><span class="line">        <span class="comment">//System.out.println(100 &lt;= num &lt;= 999); // 错误: 二元运算符 &#x27;&lt;=&#x27; 的操作数类型错误</span></span><br><span class="line">        <span class="comment">// 逻辑运算符主要用于连接多个关系运算符作为最终运算的表达式，用于实现多条件的连接</span></span><br><span class="line">        System.out.println(<span class="number">100</span> &lt;= num &amp;&amp; num &lt;= <span class="number">999</span>);</span><br><span class="line">        <span class="comment">// 使用三目运算符来判断是否为三位数</span></span><br><span class="line">        System.out.println(num + ((<span class="number">100</span> &lt;= num &amp;&amp; num &lt;= <span class="number">999</span>)? <span class="string">&quot;是三位数&quot;</span>: <span class="string">&quot;不是三位数&quot;</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
 
-        // 1.提示用户输入一个正整数并使用变量记录
-        System.out.println(&quot;请输入一个正整数：&quot;);
-        Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
-        // 2.使用逻辑运算符判断是否为三位数并打印    &gt;= 100   &lt;= 999   &amp;&amp;
-        //System.out.println(100 &lt;= num &lt;= 999); // 错误: 二元运算符 &#39;&lt;=&#39; 的操作数类型错误
-        // 逻辑运算符主要用于连接多个关系运算符作为最终运算的表达式，用于实现多条件的连接
-        System.out.println(100 &lt;= num &amp;&amp; num &lt;= 999);
-        // 使用三目运算符来判断是否为三位数
-        System.out.println(num + ((100 &lt;= num &amp;&amp; num &lt;= 999)? &quot;是三位数&quot;: &quot;不是三位数&quot;));
-    &#125;
-&#125;
-</code></pre>
+
 <h4 id="六、条件-三目运算符"><a href="#六、条件-三目运算符" class="headerlink" title="六、条件/三目运算符"></a>六、条件/三目运算符</h4><p>条件表达式? 表达式1: 表达式2<br>格式：a&gt;b ? a:b；<br>判断条件表达式是否成立，若成立则执行表达式1，否则执行表达式2 </p>
 <p>相关代码：</p>
-<pre><code class="java">import java.util.Scanner;
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TernaryOperator</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 1.提示用户分別输入两个整数并使用变量记录</span></span><br><span class="line">        System.out.println(<span class="string">&quot;请输入第一个整数：&quot;</span>);</span><br><span class="line">        Scanner sc1 = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">int</span> i = sc1.nextInt();</span><br><span class="line">        System.out.println(<span class="string">&quot;请输入第二个整数：&quot;</span>);</span><br><span class="line">        Scanner sc2 = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">int</span> j = sc2.nextInt();</span><br><span class="line">        <span class="comment">// 2.使用三目运算符找到最大值并打印</span></span><br><span class="line">        <span class="keyword">int</span> maxiMum = i &gt; j ? i : j;</span><br><span class="line">        System.out.println(<span class="string">&quot;最大值是：&quot;</span> + maxiMum);</span><br><span class="line">        System.out.println(<span class="string">&quot;最大值是：&quot;</span> + (i &gt; j? i : j));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
-public class TernaryOperator &#123;
-    public static void main(String[] args) &#123;
-        // 1.提示用户分別输入两个整数并使用变量记录
-        System.out.println(&quot;请输入第一个整数：&quot;);
-        Scanner sc1 = new Scanner(System.in);
-        int i = sc1.nextInt();
-        System.out.println(&quot;请输入第二个整数：&quot;);
-        Scanner sc2 = new Scanner(System.in);
-        int j = sc2.nextInt();
-        // 2.使用三目运算符找到最大值并打印
-        int maxiMum = i &gt; j ? i : j;
-        System.out.println(&quot;最大值是：&quot; + maxiMum);
-        System.out.println(&quot;最大值是：&quot; + (i &gt; j? i : j));
-    &#125;
-&#125;
-</code></pre>
+
 <h4 id="七、赋值运算符"><a href="#七、赋值运算符" class="headerlink" title="七、赋值运算符"></a>七、赋值运算符</h4><p>符号：=<br>1.当“=”两侧数据类型不一致时，可以使用自动类型转换或使用强制类型转换原则进行处理<br>2.支持连续赋值<br>赋值表达式本身也有值，其本身之值即为所赋之值</p>
-<pre><code class="java">/**
- * @Author: YoYopupunsi
- * @Description:
- * @Date: Created in 15:26 2021/2/3 0003
- * @Modified By:
- */
-public class AssignmentOperators &#123;
-    public static void main(String[] args) &#123;
-        // 1.声明一个int类型的变量并初始化
-        int i = 3;
-        // 2.打印变量的数值
-        System.out.println(&quot;i = &quot; + i); // i = 3
-        // 3.简单赋值运算符的使用
-        // 表示将数据5赋值给变量ia并且覆盖变量ia原来的数值
-        i = 5;
-        // 下面的代码是在打印表达式的结果
-        System.out.println( i = 5 ); // 5
-        System.out.println(&quot;i = &quot; + i); // i = 5
-        int j = i = 6;
-        System.out.println(&quot;i = &quot; + i); // i = 6
-        System.out.println(&quot;j = &quot; + j); // j = 6
-        int k;
-        k = j = i = 8;
-        System.out.println(&quot;i = &quot; + i); // i = 8
-        System.out.println(&quot;j = &quot; + j); // j = 8
-        System.out.println(&quot;k = &quot; + k); // k = 8
-        // 4.复合赋值运算符的使用
-        //i = i + 2;  目前推荐使用该方式
-        i += 2;        // 简化写法，从结果上来看是等价的
-        System.out.println(&quot;i = &quot; + i); // i = 10
-        // 5.笔试考点1
-        byte l = 10;
-        System.out.println(&quot;l = &quot; + l); // l = 10
-        //l = l + 2; // 错误: 不兼容的类型: 从int转换到byte可能会有损失         byte + int 相加结果还是int类型
-        //l = l + (byte)2; // 错误: 不兼容的类型: 从int转换到byte可能会有损失   byte + byte 相加结果还是int类型  编译器优化
-        //l = (byte)(l + 2); // 强制类型转换，将int类型转换为byte
-        l += 2; // 真正等价于l = (byte)(l + 2);
-        System.out.println(&quot;l = &quot; + l); // l = 12
-        l -= 2;
-        System.out.println(&quot;l-=2= &quot; + l);//l=10
-        l *= 2;
-        System.out.println(&quot;l*=2= &quot; + l);//20
-        l /= 2;
-        System.out.println(&quot;l/=2= &quot; + l);//10
-        l %= 2;
-        System.out.println(&quot;l%=2= &quot; + l);//0
-        // 6.笔试考点2
-        int a = 1;
-        boolean b = a == 1; //a==1; 表示判断变量b的数值是否等于1
-        System.out.println(b);//ture
-        System.out.println(a == 1);//ture
-        boolean b1 = 1 == a;//1 == a; 表示判断1是否等于变量a的数值，从结果上来说等价，推荐该方式
-        System.out.println(b1);//ture
-        System.out.println(1 == a);//ture
-        System.out.println(a = 1);//a = 1;   表示将1赋值给变量a，覆盖变量a原来的数值
-       //System.out.println(1 = a);//1 = a;  //- 编译报错  错误: 意外的类型  需要: 变量  找到:    值
-
-
-    &#125;
-&#125;
-</code></pre>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Author</span>: YoYopupunsi</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Description</span>:</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Date</span>: Created in 15:26 2021/2/3 0003</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Modified</span> By:</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AssignmentOperators</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 1.声明一个int类型的变量并初始化</span></span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">3</span>;</span><br><span class="line">        <span class="comment">// 2.打印变量的数值</span></span><br><span class="line">        System.out.println(<span class="string">&quot;i = &quot;</span> + i); <span class="comment">// i = 3</span></span><br><span class="line">        <span class="comment">// 3.简单赋值运算符的使用</span></span><br><span class="line">        <span class="comment">// 表示将数据5赋值给变量ia并且覆盖变量ia原来的数值</span></span><br><span class="line">        i = <span class="number">5</span>;</span><br><span class="line">        <span class="comment">// 下面的代码是在打印表达式的结果</span></span><br><span class="line">        System.out.println( i = <span class="number">5</span> ); <span class="comment">// 5</span></span><br><span class="line">        System.out.println(<span class="string">&quot;i = &quot;</span> + i); <span class="comment">// i = 5</span></span><br><span class="line">        <span class="keyword">int</span> j = i = <span class="number">6</span>;</span><br><span class="line">        System.out.println(<span class="string">&quot;i = &quot;</span> + i); <span class="comment">// i = 6</span></span><br><span class="line">        System.out.println(<span class="string">&quot;j = &quot;</span> + j); <span class="comment">// j = 6</span></span><br><span class="line">        <span class="keyword">int</span> k;</span><br><span class="line">        k = j = i = <span class="number">8</span>;</span><br><span class="line">        System.out.println(<span class="string">&quot;i = &quot;</span> + i); <span class="comment">// i = 8</span></span><br><span class="line">        System.out.println(<span class="string">&quot;j = &quot;</span> + j); <span class="comment">// j = 8</span></span><br><span class="line">        System.out.println(<span class="string">&quot;k = &quot;</span> + k); <span class="comment">// k = 8</span></span><br><span class="line">        <span class="comment">// 4.复合赋值运算符的使用</span></span><br><span class="line">        <span class="comment">//i = i + 2;  目前推荐使用该方式</span></span><br><span class="line">        i += <span class="number">2</span>;        <span class="comment">// 简化写法，从结果上来看是等价的</span></span><br><span class="line">        System.out.println(<span class="string">&quot;i = &quot;</span> + i); <span class="comment">// i = 10</span></span><br><span class="line">        <span class="comment">// 5.笔试考点1</span></span><br><span class="line">        <span class="keyword">byte</span> l = <span class="number">10</span>;</span><br><span class="line">        System.out.println(<span class="string">&quot;l = &quot;</span> + l); <span class="comment">// l = 10</span></span><br><span class="line">        <span class="comment">//l = l + 2; // 错误: 不兼容的类型: 从int转换到byte可能会有损失         byte + int 相加结果还是int类型</span></span><br><span class="line">        <span class="comment">//l = l + (byte)2; // 错误: 不兼容的类型: 从int转换到byte可能会有损失   byte + byte 相加结果还是int类型  编译器优化</span></span><br><span class="line">        <span class="comment">//l = (byte)(l + 2); // 强制类型转换，将int类型转换为byte</span></span><br><span class="line">        l += <span class="number">2</span>; <span class="comment">// 真正等价于l = (byte)(l + 2);</span></span><br><span class="line">        System.out.println(<span class="string">&quot;l = &quot;</span> + l); <span class="comment">// l = 12</span></span><br><span class="line">        l -= <span class="number">2</span>;</span><br><span class="line">        System.out.println(<span class="string">&quot;l-=2= &quot;</span> + l);<span class="comment">//l=10</span></span><br><span class="line">        l *= <span class="number">2</span>;</span><br><span class="line">        System.out.println(<span class="string">&quot;l*=2= &quot;</span> + l);<span class="comment">//20</span></span><br><span class="line">        l /= <span class="number">2</span>;</span><br><span class="line">        System.out.println(<span class="string">&quot;l/=2= &quot;</span> + l);<span class="comment">//10</span></span><br><span class="line">        l %= <span class="number">2</span>;</span><br><span class="line">        System.out.println(<span class="string">&quot;l%=2= &quot;</span> + l);<span class="comment">//0</span></span><br><span class="line">        <span class="comment">// 6.笔试考点2</span></span><br><span class="line">        <span class="keyword">int</span> a = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">boolean</span> b = a == <span class="number">1</span>; <span class="comment">//a==1; 表示判断变量b的数值是否等于1</span></span><br><span class="line">        System.out.println(b);<span class="comment">//ture</span></span><br><span class="line">        System.out.println(a == <span class="number">1</span>);<span class="comment">//ture</span></span><br><span class="line">        <span class="keyword">boolean</span> b1 = <span class="number">1</span> == a;<span class="comment">//1 == a; 表示判断1是否等于变量a的数值，从结果上来说等价，推荐该方式</span></span><br><span class="line">        System.out.println(b1);<span class="comment">//ture</span></span><br><span class="line">        System.out.println(<span class="number">1</span> == a);<span class="comment">//ture</span></span><br><span class="line">        System.out.println(a = <span class="number">1</span>);<span class="comment">//a = 1;   表示将1赋值给变量a，覆盖变量a原来的数值</span></span><br><span class="line">       <span class="comment">//System.out.println(1 = a);//1 = a;  //- 编译报错  错误: 意外的类型  需要: 变量  找到:    值</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 <h4 id="八、移位运算符"><a href="#八、移位运算符" class="headerlink" title="八、移位运算符"></a>八、移位运算符</h4><p><img src="https://github.com/YoYopupunsi/PicGoImgbed/blob/main/posts/20210213143222.jpg?raw=true" alt="移位运算符"></p>
-<pre><code class="java">public class MoveBitTest &#123;
-    
-    public static void main(String[] args) &#123;
-        
-        // 1.声明一个byte类型的变量并初始化
-        byte b1 = 13;
-        // 2.打印变量的数值
-        System.out.println(&quot;b1 = &quot; + b1); // b1 = 13
-        
-        System.out.println(&quot;---------------------------------------------------&quot;);
-        // 3.移位运算符的使用
-        // 13的二进制是：... 0000 1101  =&gt; 左移1位的结果是：... 0001 1010 =&gt; 换算为十进制整数是：26
-        //byte b2 = b1 &lt;&lt; 1; // 错误: 不兼容的类型: 从int转换到byte可能会有损失   自动提升为int类型，也就是32位二进制
-        byte b2 = (byte)(b1 &lt;&lt; 1); 
-        System.out.println(&quot;b2 = &quot; + b2); // 26
-        System.out.println(b1 &lt;&lt; 1); // 26    左移1位相当于当前整数的数值*2
-        System.out.println(b1 &lt;&lt; 2); // 52    左移2位相当于当前整数的数值*4
-        
-        System.out.println(&quot;---------------------------------------------------&quot;);
-        // 13的二进制是：... 0000 1101 =&gt; 右移1位的结果是：... 0000 0110 =&gt; 换算为十进制整数是：6
-        System.out.println(b1 &gt;&gt; 1); // 6     右移1位相当于当前整数的数值/2
-        System.out.println(b1 &gt;&gt; 2); // 3     右移2位相当于当前整数的数值/4
-        
-        System.out.println(&quot;---------------------------------------------------&quot;);
-        // 逻辑右移   对于非负数来说，逻辑右移和右移的效果一致
-        System.out.println(b1 &gt;&gt;&gt; 2); // 3  
-    &#125;
-&#125;
-</code></pre>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MoveBitTest</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 1.声明一个byte类型的变量并初始化</span></span><br><span class="line">		<span class="keyword">byte</span> b1 = <span class="number">13</span>;</span><br><span class="line">		<span class="comment">// 2.打印变量的数值</span></span><br><span class="line">		System.out.println(<span class="string">&quot;b1 = &quot;</span> + b1); <span class="comment">// b1 = 13</span></span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">&quot;---------------------------------------------------&quot;</span>);</span><br><span class="line">		<span class="comment">// 3.移位运算符的使用</span></span><br><span class="line">		<span class="comment">// 13的二进制是：... 0000 1101  =&gt; 左移1位的结果是：... 0001 1010 =&gt; 换算为十进制整数是：26</span></span><br><span class="line">		<span class="comment">//byte b2 = b1 &lt;&lt; 1; // 错误: 不兼容的类型: 从int转换到byte可能会有损失   自动提升为int类型，也就是32位二进制</span></span><br><span class="line">		<span class="keyword">byte</span> b2 = (<span class="keyword">byte</span>)(b1 &lt;&lt; <span class="number">1</span>); </span><br><span class="line">		System.out.println(<span class="string">&quot;b2 = &quot;</span> + b2); <span class="comment">// 26</span></span><br><span class="line">		System.out.println(b1 &lt;&lt; <span class="number">1</span>); <span class="comment">// 26    左移1位相当于当前整数的数值*2</span></span><br><span class="line">		System.out.println(b1 &lt;&lt; <span class="number">2</span>); <span class="comment">// 52    左移2位相当于当前整数的数值*4</span></span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">&quot;---------------------------------------------------&quot;</span>);</span><br><span class="line">		<span class="comment">// 13的二进制是：... 0000 1101 =&gt; 右移1位的结果是：... 0000 0110 =&gt; 换算为十进制整数是：6</span></span><br><span class="line">		System.out.println(b1 &gt;&gt; <span class="number">1</span>); <span class="comment">// 6     右移1位相当于当前整数的数值/2</span></span><br><span class="line">		System.out.println(b1 &gt;&gt; <span class="number">2</span>); <span class="comment">// 3     右移2位相当于当前整数的数值/4</span></span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">&quot;---------------------------------------------------&quot;</span>);</span><br><span class="line">		<span class="comment">// 逻辑右移   对于非负数来说，逻辑右移和右移的效果一致</span></span><br><span class="line">		System.out.println(b1 &gt;&gt;&gt; <span class="number">2</span>); <span class="comment">// 3  </span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 <p><img src="https://github.com/YoYopupunsi/PicGoImgbed/blob/main/posts/20210213143848.png?raw=true"></p>
 <p><img src="https://github.com/YoYopupunsi/PicGoImgbed/blob/main/posts/20210213143849.png?raw=true"></p>
 <h4 id="九、位运算符"><a href="#九、位运算符" class="headerlink" title="九、位运算符"></a>九、位运算符</h4><ul>
@@ -1741,29 +1254,7 @@ public class AssignmentOperators &#123;
 <li>^ 表示按位异或运算符，按照二进制位进行异或运算，同为0，不同为1.</li>
 <li>相关代码：</li>
 </ul>
-<pre><code class="java">public class BitTest &#123;
-    
-    public static void main(String[] args) &#123;
-        
-        // 1.声明两个byte类型的变量并初始化
-        byte b1 = 11;
-        byte b2 = 13;
-        // 2.打印变量的数值
-        System.out.println(&quot;b1 = &quot; + b1); // b1 = 11
-        System.out.println(&quot;b2 = &quot; + b2); // b2 = 13
-        
-        System.out.println(&quot;---------------------------------------------------&quot;);
-        // 3.实现位运算符的使用
-        // b1的二进制为： 0000 1011          
-        // b2的二进制为： 0000 1101
-        System.out.println( b1 &amp; b2);  // 按位与：同1为1，一0为0      按位与后的二进制为：0000 1001  =&gt; 转为十进制是：9
-        System.out.println( b1 | b2);  // 按位或：一1为1，同0为0      按位或后的二进制为：0000 1111  =&gt; 转为十进制是：15
-        System.out.println( b1 ^ b2);  // 按位异或：相同为0，不同为1  按位异或的二进制为：0000 0110  =&gt; 转为十进制是：6
-        System.out.println( ~ b1);     // 按位取反：1为0,0为1         按位取反的二进制为：1111 0100 
-        // 二进制1111 0100转为十进制 =&gt; 先减1: 1111 0011 =&gt; 按位取反：0000 1100 =&gt; 转为十进制：12  =&gt; 添加负号：-12
-    &#125;
-&#125;
-</code></pre>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BitTest</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 1.声明两个byte类型的变量并初始化</span></span><br><span class="line">		<span class="keyword">byte</span> b1 = <span class="number">11</span>;</span><br><span class="line">		<span class="keyword">byte</span> b2 = <span class="number">13</span>;</span><br><span class="line">		<span class="comment">// 2.打印变量的数值</span></span><br><span class="line">		System.out.println(<span class="string">&quot;b1 = &quot;</span> + b1); <span class="comment">// b1 = 11</span></span><br><span class="line">		System.out.println(<span class="string">&quot;b2 = &quot;</span> + b2); <span class="comment">// b2 = 13</span></span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">&quot;---------------------------------------------------&quot;</span>);</span><br><span class="line">		<span class="comment">// 3.实现位运算符的使用</span></span><br><span class="line">		<span class="comment">// b1的二进制为： 0000 1011          </span></span><br><span class="line">		<span class="comment">// b2的二进制为： 0000 1101</span></span><br><span class="line">		System.out.println( b1 &amp; b2);  <span class="comment">// 按位与：同1为1，一0为0      按位与后的二进制为：0000 1001  =&gt; 转为十进制是：9</span></span><br><span class="line">		System.out.println( b1 | b2);  <span class="comment">// 按位或：一1为1，同0为0      按位或后的二进制为：0000 1111  =&gt; 转为十进制是：15</span></span><br><span class="line">		System.out.println( b1 ^ b2);  <span class="comment">// 按位异或：相同为0，不同为1  按位异或的二进制为：0000 0110  =&gt; 转为十进制是：6</span></span><br><span class="line">		System.out.println( ~ b1);     <span class="comment">// 按位取反：1为0,0为1         按位取反的二进制为：1111 0100 </span></span><br><span class="line">		<span class="comment">// 二进制1111 0100转为十进制 =&gt; 先减1: 1111 0011 =&gt; 按位取反：0000 1100 =&gt; 转为十进制：12  =&gt; 添加负号：-12</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 <p><img src="https://github.com/YoYopupunsi/PicGoImgbed/blob/main/posts/20210213143845.png?raw=true"></p>
 <h4 id="十、运算符的优先级"><a href="#十、运算符的优先级" class="headerlink" title="十、运算符的优先级"></a>十、运算符的优先级</h4><ul>
 <li>()的优先级极高 </li>
