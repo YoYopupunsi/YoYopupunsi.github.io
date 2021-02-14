@@ -892,14 +892,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        10k
+                        10.1k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        39 分
+                        40 分
                     </div>
                     
                 
@@ -919,16 +919,26 @@
                 <h3 id="计算机语言介绍"><a href="#计算机语言介绍" class="headerlink" title="计算机语言介绍"></a>计算机语言介绍</h3><h4 id="一、机器语言"><a href="#一、机器语言" class="headerlink" title="一、机器语言"></a><strong>一、机器语言</strong></h4><p>​        简称机器码或原生码是用二进制代码表示能让CPU直接识别和执行的机器指令的集合，属于低级语言</p>
 <p>​    用它来编写程序是非常繁琐的工作，表现如下几点：</p>
 <ul>
-<li><p>要熟记所用计算机的全部指令代码和代码的涵义</p>
-</li>
-<li><p>程序员自己要处理每条指令和每一数据的存储分配和输入输出，还要记住编程过程中每步所使用的工作单元处在何种状态</p>
-</li>
-<li><p>编写程序花费时间比运行时间远远大于几十倍甚至几百倍</p>
-</li>
-<li><p>程序中全部都是”0”和”1”指令代码，直观性差，容易出错，除了厂家专业人士外，绝大多数不再去学习它</p>
-<p>图例：</p>
-<p><img src="https://github.com/YoYopupunsi/PicGoImgbed/blob/main/posts/20210213163913.png?raw=true"></p>
-</li>
+<li>要熟记所用计算机的全部指令代码和代码的涵义</li>
+<li>程序员自己要处理每条指令和每一数据的存储分配和输入输出，还要记住编程过程中每步所使用的工作单元处在何种状态</li>
+<li>编写程序花费时间比运行时间远远大于几十倍甚至几百倍</li>
+<li>程序中全部都是”0”和”1”指令代码，直观性差，容易出错，除了厂家专业人士外，绝大多数不再去学习它</li>
+<li>指令部分的示例</li>
+<li>0000代表加载（LOAD）</li>
+<li>0001代表存储（STORE）</li>
+<li>暂存器部分的示例</li>
+<li>0000代表暂存器A</li>
+<li>0001代表暂存器B</li>
+<li>存储器部分的示例</li>
+<li>000000000000代表地址为0的存储器</li>
+<li>000000000001代表地址为1的存储器</li>
+<li>000000010000代表地址为16的存储器</li>
+<li>100000000000代表地址为2^11的存储器</li>
+<li>集成示例</li>
+<li>0000,0000,000000010000代表LOAD A,16</li>
+<li>0000,0001,000000000001代表LOAD B,1</li>
+<li>0001,0001,000000010000代表STORE,B,16</li>
+<li>0001,0001,000000000001代表STORE,B,1</li>
 </ul>
 <h4 id="二、汇编语言"><a href="#二、汇编语言" class="headerlink" title="二、汇编语言"></a><strong>二、汇编语言</strong></h4><ul>
 <li><p>简称符号语言，用标识符代替机器指令的操作码，跟机器语言一样，直接对硬件操作，也属于低级语言， 一般来说只有像Inel AMD等芯片厂商应用才广泛</p>
@@ -2568,7 +2578,7 @@ public class AssignmentOperators &#123;
 
             
                 &nbsp; | &nbsp;字数统计:&nbsp;
-                <span class="white-color">10.8k</span> 字
+                <span class="white-color">10.9k</span> 字
             
 
             
