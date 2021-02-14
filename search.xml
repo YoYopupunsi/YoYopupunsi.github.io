@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Java多线程</title>
+      <link href="posts/76fs5we6.html"/>
+      <url>posts/76fs5we6.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="一、线程的原理"><a href="#一、线程的原理" class="headerlink" title="一、线程的原理"></a>一、线程的原理</h3><h3 id="二、线程的创建与启动"><a href="#二、线程的创建与启动" class="headerlink" title="二、线程的创建与启动"></a>二、线程的创建与启动</h3><h3 id="三、创建线程的几种方式对比"><a href="#三、创建线程的几种方式对比" class="headerlink" title="三、创建线程的几种方式对比"></a>三、创建线程的几种方式对比</h3><h3 id="四、继承Thread类与实现Runnable接口"><a href="#四、继承Thread类与实现Runnable接口" class="headerlink" title="四、继承Thread类与实现Runnable接口"></a>四、继承Thread类与实现Runnable接口</h3><h3 id="五、创建线程方式对比"><a href="#五、创建线程方式对比" class="headerlink" title="五、创建线程方式对比"></a>五、创建线程方式对比</h3><h3 id="六、线程的控制"><a href="#六、线程的控制" class="headerlink" title="六、线程的控制"></a>六、线程的控制</h3><h3 id="七、线程的调度"><a href="#七、线程的调度" class="headerlink" title="七、线程的调度"></a>七、线程的调度</h3><h3 id="八、线程的优先级"><a href="#八、线程的优先级" class="headerlink" title="八、线程的优先级"></a>八、线程的优先级</h3><h3 id="九、线程的生命周期"><a href="#九、线程的生命周期" class="headerlink" title="九、线程的生命周期"></a>九、线程的生命周期</h3><h3 id="十、多线程的安全问题与解决办法"><a href="#十、多线程的安全问题与解决办法" class="headerlink" title="十、多线程的安全问题与解决办法"></a>十、多线程的安全问题与解决办法</h3><h3 id="十一、线程的同步"><a href="#十一、线程的同步" class="headerlink" title="十一、线程的同步"></a>十一、线程的同步</h3><h3 id="十二、互斥锁"><a href="#十二、互斥锁" class="headerlink" title="十二、互斥锁"></a>十二、互斥锁</h3><h3 id="十三、线程的死锁问题"><a href="#十三、线程的死锁问题" class="headerlink" title="十三、线程的死锁问题"></a>十三、线程的死锁问题</h3><h3 id="十四、线程通信"><a href="#十四、线程通信" class="headerlink" title="十四、线程通信"></a>十四、线程通信</h3><h3 id="十五、生产者与消费者案例"><a href="#十五、生产者与消费者案例" class="headerlink" title="十五、生产者与消费者案例"></a>十五、生产者与消费者案例</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 多线程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>牛客面试题-Java工程师</title>
       <link href="posts/86sjk55a.html"/>
       <url>posts/86sjk55a.html</url>
@@ -52,6 +77,56 @@
             <tag> 算法 </tag>
             
             <tag> 数组和字符串 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JavaReflection（Java反射）</title>
+      <link href="posts/78ds5we6.html"/>
+      <url>posts/78ds5we6.html</url>
+      
+        <content type="html"><![CDATA[<p>一、Java反射机制的研究与应用</p><p>二、反射的原理分析</p><p>三、JVM与类</p><p>四、类的加载、连接、初始化</p><p>五、类初始化的时机</p><p>六、类加载器ClassLoader简介</p><p>七、类加载机制</p><p>八、创建并使用自定义的类加载器</p><p>九、开启反射的源头Class</p><p>十、获取Class实例的四种方式</p><p>十一、从Class中获取信息</p><p>十二、Proxy和InvocationHandler创建动态代理</p><p>十三、动态代理和AOP（Aspect Orient Programming）</p><p>十四、泛型和Class类</p><p>十五、使用反射来获取泛型信息</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 反射机制与原理分析 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JavaIO流</title>
+      <link href="posts/7wu77io3.html"/>
+      <url>posts/7wu77io3.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="一、IO流结构体系"><a href="#一、IO流结构体系" class="headerlink" title="一、IO流结构体系"></a>一、IO流结构体系</h3><h3 id="二、IO流原理分析"><a href="#二、IO流原理分析" class="headerlink" title="二、IO流原理分析"></a>二、IO流原理分析</h3><h3 id="三、IO流的分类"><a href="#三、IO流的分类" class="headerlink" title="三、IO流的分类"></a>三、IO流的分类</h3><h3 id="四、IO流与文件操作"><a href="#四、IO流与文件操作" class="headerlink" title="四、IO流与文件操作"></a>四、IO流与文件操作</h3><h3 id="五、IO流的包装与链接"><a href="#五、IO流的包装与链接" class="headerlink" title="五、IO流的包装与链接"></a>五、IO流的包装与链接</h3><h3 id="六、缓冲流"><a href="#六、缓冲流" class="headerlink" title="六、缓冲流"></a>六、缓冲流</h3><h3 id="七、文件的复制和性能对比"><a href="#七、文件的复制和性能对比" class="headerlink" title="七、文件的复制和性能对比"></a>七、文件的复制和性能对比</h3><h3 id="八、对象流"><a href="#八、对象流" class="headerlink" title="八、对象流"></a>八、对象流</h3><h3 id="九、对象的序列化与反序列化"><a href="#九、对象的序列化与反序列化" class="headerlink" title="九、对象的序列化与反序列化"></a>九、对象的序列化与反序列化</h3><h3 id="十、控制台IO"><a href="#十、控制台IO" class="headerlink" title="十、控制台IO"></a>十、控制台IO</h3><h3 id="十一、标准输入流与标准输出流"><a href="#十一、标准输入流与标准输出流" class="headerlink" title="十一、标准输入流与标准输出流"></a>十一、标准输入流与标准输出流</h3><h3 id="十二、打印流"><a href="#十二、打印流" class="headerlink" title="十二、打印流"></a>十二、打印流</h3><h3 id="十三、转换流"><a href="#十三、转换流" class="headerlink" title="十三、转换流"></a>十三、转换流</h3><h3 id="十四、字符编码与解码"><a href="#十四、字符编码与解码" class="headerlink" title="十四、字符编码与解码"></a>十四、字符编码与解码</h3><h3 id="十五、RandomAccessFile类"><a href="#十五、RandomAccessFile类" class="headerlink" title="十五、RandomAccessFile类"></a>十五、RandomAccessFile类</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> IO流 </tag>
             
         </tags>
       

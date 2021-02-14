@@ -5,14 +5,21 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="leetcode算法-数组和字符串, YoYopupunsi java python">
+    <meta name="keywords" content="JavaReflection（Java反射）, YoYopupunsi java python">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY" />
     <meta name="google-site-verification" content="pBWoGvVEP36FzzS4xIpoMejc5UKi3RKcxd9rWWcjiDg" />
     <meta name="360-site-verification" content="2db45fc772bbd3e7efd0985eec0fff97" />
-    <meta name="description" content="LC寻找数组的中心索引给你一个整数数组 nums，请编写一个能够返回数组 “中心索引” 的方法。
-数组 中心索引 是数组的一个索引，其左侧所有元素相加的和等于右侧所有元素相加的和。
-如果数组不存在中心索引，返回 -1 。如果数组有多个中心索">
+    <meta name="description" content="一、Java反射机制的研究与应用
+二、反射的原理分析
+三、JVM与类
+四、类的加载、连接、初始化
+五、类初始化的时机
+六、类加载器ClassLoader简介
+七、类加载机制
+八、创建并使用自定义的类加载器
+九、开启反射的源头Class
+十、">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +28,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="baidu-site-verification" content="wvlc3L96QK" />
-    <title>leetcode算法-数组和字符串 | YoYopupunsi</title>
+    <title>JavaReflection（Java反射） | YoYopupunsi</title>
     <link rel="icon" type="image/png" href="https://s3.ax1x.com/2021/02/11/yBertg.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -714,13 +721,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/galleries/%E5%8A%A8%E6%BC%AB%E6%8F%92%E7%94%BB/08.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/galleries/%E7%92%80%E7%92%A8%E6%98%9F%E7%A9%BA/09.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        leetcode算法-数组和字符串
+                        JavaReflection（Java反射）
                     </div>
                 </div>
             </div>
@@ -840,16 +847,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/leetcode/" target="_blank">
-                                <span class="chip bg-color">leetcode</span>
-                            </a>
-                        
-                            <a href="/tags/%E7%AE%97%E6%B3%95/" target="_blank">
-                                <span class="chip bg-color">算法</span>
-                            </a>
-                        
-                            <a href="/tags/%E6%95%B0%E7%BB%84%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2/" target="_blank">
-                                <span class="chip bg-color">数组和字符串</span>
+                            <a href="/tags/%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6%E4%B8%8E%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90/" target="_blank">
+                                <span class="chip bg-color">反射机制与原理分析</span>
                             </a>
                         
                     </div>
@@ -860,8 +859,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/leetcode%E7%AE%97%E6%B3%95-%E6%95%B0%E7%BB%84%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2/" class="post-category" target="_blank">
-                                leetcode算法-数组和字符串
+                            <a href="/categories/Java/" class="post-category" target="_blank">
+                                Java
                             </a>
                         
                     </div>
@@ -872,7 +871,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-01-17
+                    2020-04-20
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -886,14 +885,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        668
+                        140
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        2 分
+                        1 分
                     </div>
                     
                 
@@ -910,51 +909,21 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="LC寻找数组的中心索引"><a href="#LC寻找数组的中心索引" class="headerlink" title="LC寻找数组的中心索引"></a>LC寻找数组的中心索引</h3><p>给你一个整数数组 nums，请编写一个能够返回数组 “中心索引” 的方法。</p>
-<p>数组 中心索引 是数组的一个索引，其左侧所有元素相加的和等于右侧所有元素相加的和。</p>
-<p>如果数组不存在中心索引，返回 -1 。如果数组有多个中心索引，应该返回最靠近左边的那一个。</p>
-<p>注意：中心索引可能出现在数组的两端。</p>
-<p>示例 1：</p>
-<p><code>输入：nums = [1, 7, 3, 6, 5, 6] 输出：3 解释： 中心索引是 3 。 左侧数之和 (1 + 7 + 3 = 11)， 右侧数之和 (5 + 6 = 11) ，二者相等。</code></p>
-<p>示例 2：</p>
-<p><code>输入：nums = [1, 2, 3]</code><br><code>输出：-1</code><br><code>解释：</code><br><code>数组中不存在满足此条件的中心索引。</code><br>示例 3：</p>
-<p><code>输入：nums = [2, 1, -1]</code><br><code>输出：0</code><br><code>解释：</code><br><code>中心索引是 0 。</code><br><code>索引 0 左侧不存在元素，视作和为 0 ；</code><br><code>右侧数之和为 1 + (-1) = 0 ，二者相等。</code></p>
-<p>提示：</p>
-<p><code>nums 的长度范围为 [0, 10000]。</code><br><code>任何一个 nums[i] 将会是一个范围在 [-1000, 1000]的整数。</code></p>
-<p>解题思路：</p>
-<p>当时的思路是这样的，算出来所有数的和，然后指针索引从左边向右边移动，看一下左边和是不是等于右边的和，如果相等就返回这个指针索引的位置，否则找不到就返回-1。</p>
-<p>现在整理的时候又有了两个新思路。</p>
-<p>思路1：</p>
-<p>算出所有数的总和之后，直接从左边开始加什么时候等于总和的一半为止，如果没找到就返回-1；</p>
-<p>思路2：</p>
-<p>双指针索引方法，一个从左边开始加，一个从右边开始加，如果左边和大于右边和就右边指针索引向左移动一下，否则左边移动一下，直到两个指针相遇了，判断两边和相等不，如果相等就返回这个位置，如果不等就返回-1。但是有个细节要注意，就是有多个中心索引的情况，因此不能两边相等就停止，而应该是两指针相遇的时候才停止，并且右边的指针再相等的情况下应该优先动，这样才能保证是最左边的中心索引。</p>
-<p>代码实现：</p>
-<pre><code class="java">class Solution &#123;
-    public int pivotIndex(int[] nums) &#123;
-        if(nums.length &lt; 2)
-            return -1;
-        int leftSum = 0;
-        int rightSum = 0;
-        int sum = 0;
-        for(int n:nums)&#123;
-            sum += n;
-        &#125;
-        System.out.println(sum);
-        int i;
-        for(i=0;i&lt;nums.length;i++)&#123;
-            if(i==0)
-                leftSum = 0;
-            else
-                leftSum += nums[i-1];
-            rightSum = sum - leftSum - nums[i];
-            if(leftSum == rightSum)
-                return i;
-        &#125;
-        System.out.println(i);
-        return -1;
-    &#125;
-&#125;
-</code></pre>
+                <p>一、Java反射机制的研究与应用</p>
+<p>二、反射的原理分析</p>
+<p>三、JVM与类</p>
+<p>四、类的加载、连接、初始化</p>
+<p>五、类初始化的时机</p>
+<p>六、类加载器ClassLoader简介</p>
+<p>七、类加载机制</p>
+<p>八、创建并使用自定义的类加载器</p>
+<p>九、开启反射的源头Class</p>
+<p>十、获取Class实例的四种方式</p>
+<p>十一、从Class中获取信息</p>
+<p>十二、Proxy和InvocationHandler创建动态代理</p>
+<p>十三、动态代理和AOP（Aspect Orient Programming）</p>
+<p>十四、泛型和Class类</p>
+<p>十五、使用反射来获取泛型信息</p>
 
             </div>
             <hr/>
@@ -1105,7 +1074,7 @@
                     </span>
                     <a href="http://YoYopupunsi.github.io" class="b-link-green">YoYopupunsi</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/posts/78ds5we6.html" class="b-link-green">leetcode算法-数组和字符串</a>
+                    <a href="/posts/78ds5we6.html" class="b-link-green">JavaReflection（Java反射）</a>
                 </p>
             </div>
 
@@ -1461,37 +1430,33 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/86sjk55a.html">
+                <a href="/posts/78ds5we6.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/galleries/%E5%8A%A8%E6%BC%AB%E9%A3%8E%E6%99%AF/14.jpg" class="responsive-img" alt="牛客面试题-Java工程师">
+                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/galleries/%E5%8A%A8%E6%BC%AB%E6%8F%92%E7%94%BB/08.jpg" class="responsive-img" alt="leetcode算法-数组和字符串">
                         
-                        <span class="card-title">牛客面试题-Java工程师</span>
+                        <span class="card-title">leetcode算法-数组和字符串</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            每日一练：
-1.定义类中成员变量时不可能用到的修饰是（B）
-A.final
-B.void
-C.protected
-D.static
-解析：void修饰的是成员方法，不能修饰成员变量，没有返回值，final是修饰常量的，protected是保
+                            LC寻找数组的中心索引给你一个整数数组 nums，请编写一个能够返回数组 “中心索引” 的方法。
+数组 中心索引 是数组的一个索引，其左侧所有元素相加的和等于右侧所有元素相加的和。
+如果数组不存在中心索引，返回 -1 。如果数组有多个中心索
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2021-02-14
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2021-01-17
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%89%9B%E5%AE%A2-java%E9%9D%A2%E8%AF%95%E9%A2%98/" class="post-category" target="_blank">
-                                    牛客-java面试题
+                            <a href="/categories/leetcode%E7%AE%97%E6%B3%95-%E6%95%B0%E7%BB%84%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2/" class="post-category" target="_blank">
+                                    leetcode算法-数组和字符串
                                 </a>
                             
                             
@@ -1501,12 +1466,16 @@ D.static
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%89%9B%E5%AE%A2/" target="_blank">
-                        <span class="chip bg-color">牛客</span>
+                    <a href="/tags/leetcode/" target="_blank">
+                        <span class="chip bg-color">leetcode</span>
                     </a>
                     
-                    <a href="/tags/java/" target="_blank">
-                        <span class="chip bg-color">java</span>
+                    <a href="/tags/%E7%AE%97%E6%B3%95/" target="_blank">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%95%B0%E7%BB%84%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2/" target="_blank">
+                        <span class="chip bg-color">数组和字符串</span>
                     </a>
                     
                 </div>
@@ -1520,24 +1489,24 @@ D.static
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/34iuk7ab.html">
+                <a href="/posts/7wu77io3.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/galleries/%E5%8A%A8%E6%BC%AB%E9%A3%8E%E6%99%AF/15.jpg" class="responsive-img" alt="Java集合与泛型">
+                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/galleries/%E5%8A%A8%E6%BC%AB%E6%8F%92%E7%94%BB/04.jpg" class="responsive-img" alt="JavaIO流">
                         
-                        <span class="card-title">Java集合与泛型</span>
+                        <span class="card-title">JavaIO流</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一、集合框架概述二、Collection系列集合三、List系列集合与Set系列集合四、java.util.ArrayList源码与数据结构分析五、java.util.LinkedList源码分析六、java.util.HashSet内部原
+                            一、IO流结构体系二、IO流原理分析三、IO流的分类四、IO流与文件操作五、IO流的包装与链接六、缓冲流七、文件的复制和性能对比八、对象流九、对象的序列化与反序列化十、控制台IO十一、标准输入流与标准输出流十二、打印流十三、转换流十四、字符
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-17
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-18
                             </span>
                         <span class="publish-author">
                             
@@ -1554,12 +1523,8 @@ D.static
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E9%9B%86%E5%90%88/" target="_blank">
-                        <span class="chip bg-color">集合</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%B3%9B%E5%9E%8B/" target="_blank">
-                        <span class="chip bg-color">泛型</span>
+                    <a href="/tags/IO%E6%B5%81/" target="_blank">
+                        <span class="chip bg-color">IO流</span>
                     </a>
                     
                 </div>
@@ -1761,7 +1726,7 @@ D.static
 
             
                 &nbsp; | &nbsp;字数统计:&nbsp;
-                <span class="white-color">12.5k</span> 字
+                <span class="white-color">12.9k</span> 字
             
 
             
