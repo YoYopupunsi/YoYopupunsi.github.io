@@ -60,11 +60,94 @@
     
     
     <entry>
+      <title>数据库技术</title>
+      <link href="posts/36ds6we6.html"/>
+      <url>posts/36ds6we6.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="一、MySQL"><a href="#一、MySQL" class="headerlink" title="一、MySQL"></a>一、MySQL</h3><ul><li><h4 id="Mysql的安装和使用"><a href="#Mysql的安装和使用" class="headerlink" title="Mysql的安装和使用"></a>Mysql的安装和使用</h4></li><li><h4 id="图解Mysql程序结构"><a href="#图解Mysql程序结构" class="headerlink" title="图解Mysql程序结构"></a>图解Mysql程序结构</h4></li><li><h4 id="Mysql服务器的配置"><a href="#Mysql服务器的配置" class="headerlink" title="Mysql服务器的配置"></a>Mysql服务器的配置</h4></li><li><h4 id="Mysql客户端使用"><a href="#Mysql客户端使用" class="headerlink" title="Mysql客户端使用"></a>Mysql客户端使用</h4></li><li><h4 id="用户权限管理"><a href="#用户权限管理" class="headerlink" title="用户权限管理"></a>用户权限管理</h4></li><li><h4 id="Mysql数据库的使用"><a href="#Mysql数据库的使用" class="headerlink" title="Mysql数据库的使用"></a>Mysql数据库的使用</h4></li></ul><h3 id="二、SQL"><a href="#二、SQL" class="headerlink" title="二、SQL"></a>二、SQL</h3><ul><li><h4 id="SQL语句的三种类型"><a href="#SQL语句的三种类型" class="headerlink" title="SQL语句的三种类型"></a>SQL语句的三种类型</h4></li><li><h4 id="DML、DDL、DCL"><a href="#DML、DDL、DCL" class="headerlink" title="DML、DDL、DCL"></a>DML、DDL、DCL</h4></li><li><h4 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h4></li><li><h4 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h4></li><li><h4 id="创建和管理表"><a href="#创建和管理表" class="headerlink" title="创建和管理表"></a>创建和管理表</h4></li><li><h4 id="约束与分页"><a href="#约束与分页" class="headerlink" title="约束与分页"></a>约束与分页</h4></li></ul><h3 id="三、JDBC操作"><a href="#三、JDBC操作" class="headerlink" title="三、JDBC操作"></a>三、JDBC操作</h3><ul><li><h4 id="JDBC概述"><a href="#JDBC概述" class="headerlink" title="JDBC概述"></a>JDBC概述</h4></li><li><h4 id="获取数据库连接"><a href="#获取数据库连接" class="headerlink" title="获取数据库连接"></a>获取数据库连接</h4></li><li><h4 id="数据库连接池C3P0、DBCP、Druid"><a href="#数据库连接池C3P0、DBCP、Druid" class="headerlink" title="数据库连接池C3P0、DBCP、Druid"></a>数据库连接池C3P0、DBCP、Druid</h4></li><li><h4 id="使用JDBC完成数据库DML操作"><a href="#使用JDBC完成数据库DML操作" class="headerlink" title="使用JDBC完成数据库DML操作"></a>使用JDBC完成数据库DML操作</h4></li><li><h4 id="大数据的操作"><a href="#大数据的操作" class="headerlink" title="大数据的操作"></a>大数据的操作</h4></li><li><h4 id="批量处理与元数据"><a href="#批量处理与元数据" class="headerlink" title="批量处理与元数据"></a>批量处理与元数据</h4></li></ul><h3 id="四、DBUtils"><a href="#四、DBUtils" class="headerlink" title="四、DBUtils"></a>四、DBUtils</h3><ul><li><h4 id="使用QueryRunner"><a href="#使用QueryRunner" class="headerlink" title="使用QueryRunner"></a>使用QueryRunner</h4></li><li><h4 id="可插拔式结果集处理"><a href="#可插拔式结果集处理" class="headerlink" title="可插拔式结果集处理"></a>可插拔式结果集处理</h4></li><li><h4 id="批量处理"><a href="#批量处理" class="headerlink" title="批量处理"></a>批量处理</h4></li><li><h4 id="大数据结果集处理"><a href="#大数据结果集处理" class="headerlink" title="大数据结果集处理"></a>大数据结果集处理</h4></li><li><h4 id="自定义结果集处理"><a href="#自定义结果集处理" class="headerlink" title="自定义结果集处理"></a>自定义结果集处理</h4></li><li><h4 id="利用DBUtils编写通用DAO"><a href="#利用DBUtils编写通用DAO" class="headerlink" title="利用DBUtils编写通用DAO"></a>利用DBUtils编写通用DAO</h4></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据库技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+            <tag> SQL </tag>
+            
+            <tag> JDBC </tag>
+            
+            <tag> DBUtils </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Java8_9_10_11新特性</title>
+      <link href="posts/33ds4we7.html"/>
+      <url>posts/33ds4we7.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、Java8新特性"><a href="#一、Java8新特性" class="headerlink" title="一、Java8新特性"></a>一、Java8新特性</h2><ul><li><h3 id="Lambda表达式"><a href="#Lambda表达式" class="headerlink" title="Lambda表达式"></a>Lambda表达式</h3></li><li><h3 id="类型推断"><a href="#类型推断" class="headerlink" title="类型推断"></a>类型推断</h3></li><li><h3 id="Java8核心函数式接口"><a href="#Java8核心函数式接口" class="headerlink" title="Java8核心函数式接口"></a>Java8核心函数式接口</h3></li><li><h3 id="Lambda表达式的参数传递"><a href="#Lambda表达式的参数传递" class="headerlink" title="Lambda表达式的参数传递"></a>Lambda表达式的参数传递</h3></li><li><h3 id="方法引用与构造器引用"><a href="#方法引用与构造器引用" class="headerlink" title="方法引用与构造器引用"></a>方法引用与构造器引用</h3></li><li><h3 id="强大的Stream-API"><a href="#强大的Stream-API" class="headerlink" title="强大的Stream API"></a>强大的Stream API</h3></li><li><h3 id="Stream操作的核心步骤"><a href="#Stream操作的核心步骤" class="headerlink" title="Stream操作的核心步骤"></a>Stream操作的核心步骤</h3></li><li><h3 id="惰性求值与内部迭代"><a href="#惰性求值与内部迭代" class="headerlink" title="惰性求值与内部迭代"></a>惰性求值与内部迭代</h3></li><li><h3 id="筛选与切片"><a href="#筛选与切片" class="headerlink" title="筛选与切片"></a>筛选与切片</h3></li><li><h3 id="映射与排序"><a href="#映射与排序" class="headerlink" title="映射与排序"></a>映射与排序</h3></li><li><h3 id="查找与匹配"><a href="#查找与匹配" class="headerlink" title="查找与匹配"></a>查找与匹配</h3></li><li><h3 id="归约与收集"><a href="#归约与收集" class="headerlink" title="归约与收集"></a>归约与收集</h3></li><li><h3 id="并行流与串行流"><a href="#并行流与串行流" class="headerlink" title="并行流与串行流"></a>并行流与串行流</h3></li><li><h3 id="Optional容器类"><a href="#Optional容器类" class="headerlink" title="Optional容器类"></a>Optional容器类</h3></li></ul><h2 id="二、Java9-10-11新特性"><a href="#二、Java9-10-11新特性" class="headerlink" title="二、Java9/10/11新特性"></a>二、Java9/10/11新特性</h2><ul><li><h3 id="模块化系统"><a href="#模块化系统" class="headerlink" title="模块化系统"></a>模块化系统</h3></li><li><h3 id="jShell命令"><a href="#jShell命令" class="headerlink" title="jShell命令"></a>jShell命令</h3></li><li><h3 id="接口的私有方法"><a href="#接口的私有方法" class="headerlink" title="接口的私有方法"></a>接口的私有方法</h3></li><li><h3 id="语法改进：try和钻石操作符"><a href="#语法改进：try和钻石操作符" class="headerlink" title="语法改进：try和钻石操作符"></a>语法改进：try和钻石操作符</h3></li><li><h3 id="String存储结构变更"><a href="#String存储结构变更" class="headerlink" title="String存储结构变更"></a>String存储结构变更</h3></li><li><h3 id="增强的Stream-API"><a href="#增强的Stream-API" class="headerlink" title="增强的Stream API"></a>增强的Stream API</h3></li><li><h3 id="全新的HTTP客户端API"><a href="#全新的HTTP客户端API" class="headerlink" title="全新的HTTP客户端API"></a>全新的HTTP客户端API</h3></li><li><h3 id="局部变量的类型判断"><a href="#局部变量的类型判断" class="headerlink" title="局部变量的类型判断"></a>局部变量的类型判断</h3></li><li><h3 id="集合新增一系列处理方法"><a href="#集合新增一系列处理方法" class="headerlink" title="集合新增一系列处理方法"></a>集合新增一系列处理方法</h3></li><li><h3 id="Optional加强"><a href="#Optional加强" class="headerlink" title="Optional加强"></a>Optional加强</h3></li><li><h3 id="更简化的编译运行程序"><a href="#更简化的编译运行程序" class="headerlink" title="更简化的编译运行程序"></a>更简化的编译运行程序</h3></li><li><h3 id="废弃Nashorm引擎"><a href="#废弃Nashorm引擎" class="headerlink" title="废弃Nashorm引擎"></a>废弃Nashorm引擎</h3></li><li><h3 id="ZGC"><a href="#ZGC" class="headerlink" title="ZGC"></a>ZGC</h3></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java8新特性 </tag>
+            
+            <tag> Java9/10/11新特性 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Java网络编程</title>
+      <link href="posts/45ds5we6.html"/>
+      <url>posts/45ds5we6.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="一、网络编程基础知识"><a href="#一、网络编程基础知识" class="headerlink" title="一、网络编程基础知识"></a>一、网络编程基础知识</h3><h3 id="二、网络编程的主要问题"><a href="#二、网络编程的主要问题" class="headerlink" title="二、网络编程的主要问题"></a>二、网络编程的主要问题</h3><h3 id="三、如何实现网络中主机的相互通讯"><a href="#三、如何实现网络中主机的相互通讯" class="headerlink" title="三、如何实现网络中主机的相互通讯"></a>三、如何实现网络中主机的相互通讯</h3><h3 id="四、网络通讯要素"><a href="#四、网络通讯要素" class="headerlink" title="四、网络通讯要素"></a>四、网络通讯要素</h3><h3 id="五、网络通信协议"><a href="#五、网络通信协议" class="headerlink" title="五、网络通信协议"></a>五、网络通信协议</h3><h3 id="六、OSI参考模型"><a href="#六、OSI参考模型" class="headerlink" title="六、OSI参考模型"></a>六、OSI参考模型</h3><h3 id="七、TCP-IP参考模型（或TCP-IP协议）"><a href="#七、TCP-IP参考模型（或TCP-IP协议）" class="headerlink" title="七、TCP/IP参考模型（或TCP/IP协议）"></a>七、TCP/IP参考模型（或TCP/IP协议）</h3><h3 id="八、数据的封装与拆封"><a href="#八、数据的封装与拆封" class="headerlink" title="八、数据的封装与拆封"></a>八、数据的封装与拆封</h3><h3 id="九、Java-net-InetAddress类"><a href="#九、Java-net-InetAddress类" class="headerlink" title="九、Java.net.InetAddress类"></a>九、Java.net.InetAddress类</h3><h3 id="十、TCP协议与UDP协议"><a href="#十、TCP协议与UDP协议" class="headerlink" title="十、TCP协议与UDP协议"></a>十、TCP协议与UDP协议</h3><h3 id="十一、基于TCP协议的网络编程"><a href="#十一、基于TCP协议的网络编程" class="headerlink" title="十一、基于TCP协议的网络编程"></a>十一、基于TCP协议的网络编程</h3><h3 id="十二、Socket的TCP编程"><a href="#十二、Socket的TCP编程" class="headerlink" title="十二、Socket的TCP编程"></a>十二、Socket的TCP编程</h3><h3 id="十三、基于UDP协议的网络编程"><a href="#十三、基于UDP协议的网络编程" class="headerlink" title="十三、基于UDP协议的网络编程"></a>十三、基于UDP协议的网络编程</h3><h3 id="十四、URL编程"><a href="#十四、URL编程" class="headerlink" title="十四、URL编程"></a>十四、URL编程</h3><h3 id="十五、针对HTTP协议的URLConnection"><a href="#十五、针对HTTP协议的URLConnection" class="headerlink" title="十五、针对HTTP协议的URLConnection"></a>十五、针对HTTP协议的URLConnection</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网络编程基础知识 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaReflection（Java反射）</title>
       <link href="posts/78ds5we6.html"/>
       <url>posts/78ds5we6.html</url>
       
-        <content type="html"><![CDATA[<p>一、Java反射机制的研究与应用</p><p>二、反射的原理分析</p><p>三、JVM与类</p><p>四、类的加载、连接、初始化</p><p>五、类初始化的时机</p><p>六、类加载器ClassLoader简介</p><p>七、类加载机制</p><p>八、创建并使用自定义的类加载器</p><p>九、开启反射的源头Class</p><p>十、获取Class实例的四种方式</p><p>十一、从Class中获取信息</p><p>十二、Proxy和InvocationHandler创建动态代理</p><p>十三、动态代理和AOP（Aspect Orient Programming）</p><p>十四、泛型和Class类</p><p>十五、使用反射来获取泛型信息</p>]]></content>
+        <content type="html"><![CDATA[<h3 id="一、Java反射机制的研究与应用"><a href="#一、Java反射机制的研究与应用" class="headerlink" title="一、Java反射机制的研究与应用"></a>一、Java反射机制的研究与应用</h3><h3 id="二、反射的原理分析"><a href="#二、反射的原理分析" class="headerlink" title="二、反射的原理分析"></a>二、反射的原理分析</h3><h3 id="三、JVM与类"><a href="#三、JVM与类" class="headerlink" title="三、JVM与类"></a>三、JVM与类</h3><h3 id="四、类的加载、连接、初始化"><a href="#四、类的加载、连接、初始化" class="headerlink" title="四、类的加载、连接、初始化"></a>四、类的加载、连接、初始化</h3><h3 id="五、类初始化的时机"><a href="#五、类初始化的时机" class="headerlink" title="五、类初始化的时机"></a>五、类初始化的时机</h3><h3 id="六、类加载器ClassLoader简介"><a href="#六、类加载器ClassLoader简介" class="headerlink" title="六、类加载器ClassLoader简介"></a>六、类加载器ClassLoader简介</h3><h3 id="七、类加载机制"><a href="#七、类加载机制" class="headerlink" title="七、类加载机制"></a>七、类加载机制</h3><h3 id="八、创建并使用自定义的类加载器"><a href="#八、创建并使用自定义的类加载器" class="headerlink" title="八、创建并使用自定义的类加载器"></a>八、创建并使用自定义的类加载器</h3><h3 id="九、开启反射的源头Class"><a href="#九、开启反射的源头Class" class="headerlink" title="九、开启反射的源头Class"></a>九、开启反射的源头Class</h3><h3 id="十、获取Class实例的四种方式"><a href="#十、获取Class实例的四种方式" class="headerlink" title="十、获取Class实例的四种方式"></a>十、获取Class实例的四种方式</h3><h3 id="十一、从Class中获取信息"><a href="#十一、从Class中获取信息" class="headerlink" title="十一、从Class中获取信息"></a>十一、从Class中获取信息</h3><h3 id="十二、Proxy和InvocationHandler创建动态代理"><a href="#十二、Proxy和InvocationHandler创建动态代理" class="headerlink" title="十二、Proxy和InvocationHandler创建动态代理"></a>十二、Proxy和InvocationHandler创建动态代理</h3><h3 id="十三、动态代理和AOP（Aspect-Orient-Programming）"><a href="#十三、动态代理和AOP（Aspect-Orient-Programming）" class="headerlink" title="十三、动态代理和AOP（Aspect Orient Programming）"></a>十三、动态代理和AOP（Aspect Orient Programming）</h3><h3 id="十四、泛型和Class类"><a href="#十四、泛型和Class类" class="headerlink" title="十四、泛型和Class类"></a>十四、泛型和Class类</h3><h3 id="十五、使用反射来获取泛型信息"><a href="#十五、使用反射来获取泛型信息" class="headerlink" title="十五、使用反射来获取泛型信息"></a>十五、使用反射来获取泛型信息</h3>]]></content>
       
       
       <categories>
