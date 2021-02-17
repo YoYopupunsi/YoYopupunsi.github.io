@@ -10,7 +10,17 @@
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY" />
     <meta name="google-site-verification" content="pBWoGvVEP36FzzS4xIpoMejc5UKi3RKcxd9rWWcjiDg" />
     <meta name="360-site-verification" content="2db45fc772bbd3e7efd0985eec0fff97" />
-    <meta name="description" content="一、流程控制语句的介绍二、Java编译器执行流程三、if分支结构四、switch选择结构与相关规则五、循环结构六、for循环七、while循环八、do-while循环语句九、各语句性能对比与应用场景十、特殊流程控制语句十一、方法的声明与使用">
+    <meta name="description" content="一、流程控制语句的介绍1.1、顺序结构
+程序从上到下逐行地执行，中间没有任何判断和跳转。
+
+1.2、分支结构
+根据条件，选择性地执行某段代码。
+
+有if…else和switch-case两种分支语句。
+
+
+1.3、循环结构
+根据循环条件，重">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -846,6 +856,10 @@
                                 <span class="chip bg-color">循环结构</span>
                             </a>
                         
+                            <a href="/tags/%E9%A1%BA%E5%BA%8F%E7%BB%93%E6%9E%84/" target="_blank">
+                                <span class="chip bg-color">顺序结构</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -880,14 +894,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        123
+                        1.1k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        4 分
                     </div>
                     
                 
@@ -904,7 +918,130 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="一、流程控制语句的介绍"><a href="#一、流程控制语句的介绍" class="headerlink" title="一、流程控制语句的介绍"></a>一、流程控制语句的介绍</h3><h3 id="二、Java编译器执行流程"><a href="#二、Java编译器执行流程" class="headerlink" title="二、Java编译器执行流程"></a>二、Java编译器执行流程</h3><h3 id="三、if分支结构"><a href="#三、if分支结构" class="headerlink" title="三、if分支结构"></a>三、if分支结构</h3><h3 id="四、switch选择结构与相关规则"><a href="#四、switch选择结构与相关规则" class="headerlink" title="四、switch选择结构与相关规则"></a>四、switch选择结构与相关规则</h3><h3 id="五、循环结构"><a href="#五、循环结构" class="headerlink" title="五、循环结构"></a>五、循环结构</h3><h3 id="六、for循环"><a href="#六、for循环" class="headerlink" title="六、for循环"></a>六、for循环</h3><h3 id="七、while循环"><a href="#七、while循环" class="headerlink" title="七、while循环"></a>七、while循环</h3><h3 id="八、do-while循环语句"><a href="#八、do-while循环语句" class="headerlink" title="八、do-while循环语句"></a>八、do-while循环语句</h3><h3 id="九、各语句性能对比与应用场景"><a href="#九、各语句性能对比与应用场景" class="headerlink" title="九、各语句性能对比与应用场景"></a>九、各语句性能对比与应用场景</h3><h3 id="十、特殊流程控制语句"><a href="#十、特殊流程控制语句" class="headerlink" title="十、特殊流程控制语句"></a>十、特殊流程控制语句</h3><h3 id="十一、方法的声明与使用"><a href="#十一、方法的声明与使用" class="headerlink" title="十一、方法的声明与使用"></a>十一、方法的声明与使用</h3><h3 id="十二、方法调用的过程分析"><a href="#十二、方法调用的过程分析" class="headerlink" title="十二、方法调用的过程分析"></a>十二、方法调用的过程分析</h3><h3 id="十三、跨类调用方法"><a href="#十三、跨类调用方法" class="headerlink" title="十三、跨类调用方法"></a>十三、跨类调用方法</h3><h3 id="十四、参数的值传递"><a href="#十四、参数的值传递" class="headerlink" title="十四、参数的值传递"></a>十四、参数的值传递</h3><h3 id="十五、方法的重载Overload"><a href="#十五、方法的重载Overload" class="headerlink" title="十五、方法的重载Overload"></a>十五、方法的重载Overload</h3>
+                <h3 id="一、流程控制语句的介绍"><a href="#一、流程控制语句的介绍" class="headerlink" title="一、流程控制语句的介绍"></a>一、流程控制语句的介绍</h3><h4 id="1-1、顺序结构"><a href="#1-1、顺序结构" class="headerlink" title="1.1、顺序结构"></a>1.1、<strong>顺序结构</strong></h4><ul>
+<li>程序从上到下逐行地执行，中间没有任何判断和跳转。</li>
+</ul>
+<h4 id="1-2、分支结构"><a href="#1-2、分支结构" class="headerlink" title="1.2、分支结构"></a>1.2、<strong>分支结构</strong></h4><ul>
+<li><p>根据条件，选择性地执行某段代码。</p>
+</li>
+<li><p>有if…else和switch-case两种分支语句。</p>
+</li>
+</ul>
+<h4 id="1-3、循环结构"><a href="#1-3、循环结构" class="headerlink" title="1.3、循环结构"></a>1.3、<strong>循环结构</strong></h4><ul>
+<li><p>根据循环条件，重复性的执行某段代码。</p>
+</li>
+<li><p>有while、do…while、for三种循环语句。</p>
+</li>
+<li><p>注：JDK1.5提供了foreach循环，方便的遍历集合、数组元素</p>
+</li>
+</ul>
+<h3 id="二、顺序结构"><a href="#二、顺序结构" class="headerlink" title="二、顺序结构"></a>二、顺序结构</h3><h4 id="2-1、Java中定义成员变量时采用合法的前向引用"><a href="#2-1、Java中定义成员变量时采用合法的前向引用" class="headerlink" title="2.1、Java中定义成员变量时采用合法的前向引用"></a>2.1、Java中定义成员变量时采用合法的前向引用</h4><pre><code class="java">public class SequentialStructure&#123;
+    intnuma = 1;
+    intnumb = numa + 2;
+&#125;
+</code></pre>
+<p><img src="https://github.com/YoYopupunsi/PicGoImgbed/blob/main/posts/20210215223932.png?raw=true"></p>
+<h3 id="三、if分支结构"><a href="#三、if分支结构" class="headerlink" title="三、if分支结构"></a>三、if分支结构</h3><p><img src="https://github.com/YoYopupunsi/PicGoImgbed/blob/main/posts/20210215232125.png?raw=true"></p>
+<p>if  else使用说明：</p>
+<ul>
+<li><p>条件表达式必须是布尔表达式（关系表达式或逻辑表达式）、布尔变量</p>
+</li>
+<li><p>语句块只有一条执行语句时，一对{}可以省略，但建议保留</p>
+</li>
+<li><p>if-else语句结构，根据需要可以嵌套使用</p>
+</li>
+<li><p>当if-else结构是“多选一”时，最后的else是可选的，根据需要可以省略</p>
+</li>
+<li><p>当多个条件是“互斥”关系时，条件判断语句及执行语句间顺序无所谓当多个条件是“包含”关系时，“小上大下 / 子上父下”</p>
+</li>
+</ul>
+<pre><code class="java">/*
+if分支结构案例：去网吧上网
+应用：
+1.请用户输入身份信息并使用变量记录
+2.判断年龄是否满18岁
+*/
+import java.util.Scanner;
+public class Age&#123;
+    public static void main(String[]args)&#123;
+        //1.提示用户输入身份信息并使用变量接收记录
+        System.out.println(&quot;请您输入你的身份信息：&quot;)；
+        Scanner sc = new Scanner(System.in);
+        int Age = sc.nextInt();
+        //2.使用if分支结构判断身份信息年龄是否满十八岁
+        if(Age&gt;=18)&#123;
+            System.out.println(&quot;欢迎光临&quot;)
+        &#125;
+         System.out.println(&quot;未满18岁严禁上网&quot;) 
+    &#125;    
+&#125;
+</code></pre>
+<pre><code class="java">/*
+if分支结构案例：查找两个整数中的最大值
+应用：
+1.提示用户输入两个整数并使用变量记录
+2.使用if分支结构判断最大值并输出打印
+*/
+import java.util.Scanner;
+public class TwoIntMax&#123;
+    public static void main(String[]args)&#123;
+        System.out.println(&quot;请输入两个整数：&quot;);
+        //1.提示用户输入两个整数并使用变量记录
+        Scanner sc = new Scanner(System.in);
+        int na = sc.nextInt();
+        int nb = sc.nextInt();
+        //2.使用if分支结构判断最大值
+        /*
+        //方式一：使用两个if分支结构找最大值
+        if(na &gt;= nb)&#123;
+            System.out.println(&quot;最大值是：&quot; + na);
+        &#125;
+        if(na &lt; nb)&#123;
+            System.out.println(&quot;最大值是：&quot; + nb);
+        &#125;
+        */
+        //方式二：假设法：假设第一个数为最大值并使用变量记录，推荐使用此方式：通用性
+        int max = na;
+        if(nb &gt;= max)&#123;
+            max = nb;
+        //若if判断nb&gt;=max成立则输出max=nb，nb则为最大值
+        &#125;
+        //若if判断nb&gt;=max不成立则输出max，na则为最大值
+        System.out.println(&quot;最大值是：&quot;+ max)
+    &#125;
+&#125;
+</code></pre>
+<pre><code class="java">/*
+if else分支结构案例：考试成绩是否合格
+1.提示用户输入成绩并使用变量记录
+2.使用if else分支结构判断输入的数值是否合格
+*/
+import java.util.Scanner;
+public class ExaminationGradeRating&#123;
+    public static void main(String[]args)&#123;
+        System.out.println(&quot;请您输入您的成绩：&quot;);
+        //1.提示用户输入成绩并使用变量记录
+        Scanner sc = new Scanner(System.in);
+        int eg = sc.nextInt();
+        //2.使用if else分支结构判断输入的数值是否合格
+        if(eg&gt;=60)&#123;
+            //3.if判断eg&gt;=60成立，则输出恭喜你，明年不用补考了
+            System.out.println(&quot;恭喜你，明年不用补考了&quot;);
+        &#125;
+        else&#123;
+            //4.if判断eg&gt;=60不成立，则输出明年继续补卡吧！
+            System.out.println(&quot;明年继续补考把！&quot;)
+        &#125;     
+    &#125;
+&#125;
+</code></pre>
+<pre><code class="java">/*
+提示用户输入一个整数，使用if else分支结构判断该整数是负数还是非负数并打印。
+• 使用if else分支结构判断该整数是正数、负数还是零。
+1.提示用户输入一个整数
+*/
+</code></pre>
+<h3 id="四、switch选择结构与相关规则"><a href="#四、switch选择结构与相关规则" class="headerlink" title="四、switch选择结构与相关规则"></a>四、switch选择结构与相关规则</h3><h3 id="五、循环结构"><a href="#五、循环结构" class="headerlink" title="五、循环结构"></a>五、循环结构</h3><h3 id="六、for循环"><a href="#六、for循环" class="headerlink" title="六、for循环"></a>六、for循环</h3><h3 id="七、while循环"><a href="#七、while循环" class="headerlink" title="七、while循环"></a>七、while循环</h3><h3 id="八、do-while循环语句"><a href="#八、do-while循环语句" class="headerlink" title="八、do-while循环语句"></a>八、do-while循环语句</h3><h3 id="九、各语句性能对比与应用场景"><a href="#九、各语句性能对比与应用场景" class="headerlink" title="九、各语句性能对比与应用场景"></a>九、各语句性能对比与应用场景</h3><h3 id="十、特殊流程控制语句"><a href="#十、特殊流程控制语句" class="headerlink" title="十、特殊流程控制语句"></a>十、特殊流程控制语句</h3><h4 id="10-1、break"><a href="#10-1、break" class="headerlink" title="10.1、break"></a>10.1、break</h4><h4 id="10-2、continue"><a href="#10-2、continue" class="headerlink" title="10.2、continue"></a>10.2、continue</h4><h4 id="10-3、return"><a href="#10-3、return" class="headerlink" title="10.3、return"></a>10.3、return</h4><h3 id="十一、方法的声明与使用"><a href="#十一、方法的声明与使用" class="headerlink" title="十一、方法的声明与使用"></a>十一、方法的声明与使用</h3><h3 id="十二、方法调用的过程分析"><a href="#十二、方法调用的过程分析" class="headerlink" title="十二、方法调用的过程分析"></a>十二、方法调用的过程分析</h3><h3 id="十三、跨类调用方法"><a href="#十三、跨类调用方法" class="headerlink" title="十三、跨类调用方法"></a>十三、跨类调用方法</h3><h3 id="十四、参数的值传递"><a href="#十四、参数的值传递" class="headerlink" title="十四、参数的值传递"></a>十四、参数的值传递</h3><h3 id="十五、方法的重载Overload"><a href="#十五、方法的重载Overload" class="headerlink" title="十五、方法的重载Overload"></a>十五、方法的重载Overload</h3>
             </div>
             <hr/>
 
@@ -1708,7 +1845,7 @@
 
             
                 &nbsp; | &nbsp;字数统计:&nbsp;
-                <span class="white-color">14k</span> 字
+                <span class="white-color">15.4k</span> 字
             
 
             
