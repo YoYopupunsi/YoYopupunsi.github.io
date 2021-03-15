@@ -894,14 +894,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.1k
+                        1.5k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        4 分
+                        6 分
                     </div>
                     
                 
@@ -941,21 +941,15 @@
 &#125;
 </code></pre>
 <p><img src="https://github.com/YoYopupunsi/PicGoImgbed/blob/main/posts/20210215223932.png?raw=true"></p>
-<h3 id="三、if分支结构"><a href="#三、if分支结构" class="headerlink" title="三、if分支结构"></a>三、if分支结构</h3><p><img src="https://github.com/YoYopupunsi/PicGoImgbed/blob/main/posts/20210215232125.png?raw=true"></p>
-<p>if  else使用说明：</p>
-<ul>
-<li><p>条件表达式必须是布尔表达式（关系表达式或逻辑表达式）、布尔变量</p>
-</li>
-<li><p>语句块只有一条执行语句时，一对{}可以省略，但建议保留</p>
-</li>
-<li><p>if-else语句结构，根据需要可以嵌套使用</p>
-</li>
-<li><p>当if-else结构是“多选一”时，最后的else是可选的，根据需要可以省略</p>
-</li>
-<li><p>当多个条件是“互斥”关系时，条件判断语句及执行语句间顺序无所谓当多个条件是“包含”关系时，“小上大下 / 子上父下”</p>
-</li>
+<h3 id="三、if分支结构"><a href="#三、if分支结构" class="headerlink" title="三、if分支结构"></a>三、if分支结构</h3><h4 id="3-1、if分支结构的概念："><a href="#3-1、if分支结构的概念：" class="headerlink" title="3.1、if分支结构的概念："></a>3.1、if分支结构的概念：</h4><p><img src="https://github.com/YoYopupunsi/PicGoImgbed/blob/main/posts/20210215232125.png?raw=true"></p>
+<h4 id="3-2、if-else使用说明"><a href="#3-2、if-else使用说明" class="headerlink" title="3.2、if  else使用说明"></a>3.2、if  else使用说明</h4><ul>
+<li>条件表达式必须是布尔表达式（关系表达式或逻辑表达式）、布尔变量</li>
+<li>语句块只有一条执行语句时，一对{}可以省略，但建议保留</li>
+<li>if-else语句结构，根据需要可以嵌套使用</li>
+<li>当if-else结构是“多选一”时，最后的else是可选的，根据需要可以省略</li>
+<li>当多个条件是“互斥”关系时，条件判断语句及执行语句间顺序无所谓当多个条件是“包含”关系时，“小上大下 / 子上父下”</li>
 </ul>
-<pre><code class="java">/*
+<h4 id="3-3、相关案例"><a href="#3-3、相关案例" class="headerlink" title="3.3、相关案例"></a>3.3、相关案例</h4><pre><code class="java">/*
 if分支结构案例：去网吧上网
 应用：
 1.请用户输入身份信息并使用变量记录
@@ -1039,9 +1033,60 @@ public class ExaminationGradeRating&#123;
 提示用户输入一个整数，使用if else分支结构判断该整数是负数还是非负数并打印。
 • 使用if else分支结构判断该整数是正数、负数还是零。
 1.提示用户输入一个整数
+2.使用if else分支结构进行判断
 */
+import java.util.Scanner;
+public class IfElse&#123;                        
+    public static void main(String[]args)&#123;
+        System.out.println(&quot;请您输入一个整数：&quot;);
+        //1.提示用户输入一个整数并声明变量记录
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+        //2.使用if else分支结构进行判断
+        if(i&gt;0)&#123;
+            //3.if判断i&gt;0成立，则您输入整数数字的为正数
+            System.out.println(&quot;您输入整数数字的为正数&quot;);
+        &#125;
+        if(i &lt; 0)&#123;
+            //4.if判断i&lt;0成立，则您输入整数数字的为负数
+            System.out.println(&quot;您输入整数数字的为负数&quot;);
+        &#125;
+        else&#123;
+            //5.上面语句不成立，则您输入整数数字的为零
+            System.out.println(&quot;您输入的整数数字为零&quot;);
+        &#125;
+    &#125;    
+&#125;
 </code></pre>
-<h3 id="四、switch选择结构与相关规则"><a href="#四、switch选择结构与相关规则" class="headerlink" title="四、switch选择结构与相关规则"></a>四、switch选择结构与相关规则</h3><h3 id="五、循环结构"><a href="#五、循环结构" class="headerlink" title="五、循环结构"></a>五、循环结构</h3><h3 id="六、for循环"><a href="#六、for循环" class="headerlink" title="六、for循环"></a>六、for循环</h3><h3 id="七、while循环"><a href="#七、while循环" class="headerlink" title="七、while循环"></a>七、while循环</h3><h3 id="八、do-while循环语句"><a href="#八、do-while循环语句" class="headerlink" title="八、do-while循环语句"></a>八、do-while循环语句</h3><h3 id="九、各语句性能对比与应用场景"><a href="#九、各语句性能对比与应用场景" class="headerlink" title="九、各语句性能对比与应用场景"></a>九、各语句性能对比与应用场景</h3><h3 id="十、特殊流程控制语句"><a href="#十、特殊流程控制语句" class="headerlink" title="十、特殊流程控制语句"></a>十、特殊流程控制语句</h3><h4 id="10-1、break"><a href="#10-1、break" class="headerlink" title="10.1、break"></a>10.1、break</h4><h4 id="10-2、continue"><a href="#10-2、continue" class="headerlink" title="10.2、continue"></a>10.2、continue</h4><h4 id="10-3、return"><a href="#10-3、return" class="headerlink" title="10.3、return"></a>10.3、return</h4><h3 id="十一、方法的声明与使用"><a href="#十一、方法的声明与使用" class="headerlink" title="十一、方法的声明与使用"></a>十一、方法的声明与使用</h3><h3 id="十二、方法调用的过程分析"><a href="#十二、方法调用的过程分析" class="headerlink" title="十二、方法调用的过程分析"></a>十二、方法调用的过程分析</h3><h3 id="十三、跨类调用方法"><a href="#十三、跨类调用方法" class="headerlink" title="十三、跨类调用方法"></a>十三、跨类调用方法</h3><h3 id="十四、参数的值传递"><a href="#十四、参数的值传递" class="headerlink" title="十四、参数的值传递"></a>十四、参数的值传递</h3><h3 id="十五、方法的重载Overload"><a href="#十五、方法的重载Overload" class="headerlink" title="十五、方法的重载Overload"></a>十五、方法的重载Overload</h3>
+<pre><code class="java">/*
+根据用户输入的薪水计算个人所得税并打印出来
+1.提示用户输入薪资
+2.使用if elseif else分支结构判断薪水所在的范围
+*/
+public class IfElseIfElse&#123;
+    public static void main(String[]args)&#123;
+        System.out.println(&quot;请您输入您的薪水：&quot;);
+        Scanner sc = new Scanner(System.in);
+        int i = sc.next();
+        if(i &lt;= 5000)&#123;
+            System.out.println(&quot;您不用交税哟！&quot;);
+        &#125;
+        else if()
+    &#125;
+&#125;
+</code></pre>
+<h3 id="四、switch选择结构与相关规则"><a href="#四、switch选择结构与相关规则" class="headerlink" title="四、switch选择结构与相关规则"></a>四、switch选择结构与相关规则</h3><h4 id="分支结构二"><a href="#分支结构二" class="headerlink" title="分支结构二"></a>分支结构二</h4><p>格式：</p>
+<p>switch（常量）{</p>
+<p>case 常量1：</p>
+<p>​    语句块1;</p>
+<p>case 常量2：</p>
+<p>​    语句块2;</p>
+<p>case 常量3：</p>
+<p>​    语句块3;</p>
+<p>case 常量4：</p>
+<p>​    语句块4;</p>
+<p>}</p>
+<h3 id="五、循环结构"><a href="#五、循环结构" class="headerlink" title="五、循环结构"></a>五、循环结构</h3><h3 id="六、for循环"><a href="#六、for循环" class="headerlink" title="六、for循环"></a>六、for循环</h3><h3 id="七、while循环"><a href="#七、while循环" class="headerlink" title="七、while循环"></a>七、while循环</h3><h3 id="八、do-while循环语句"><a href="#八、do-while循环语句" class="headerlink" title="八、do-while循环语句"></a>八、do-while循环语句</h3><h3 id="九、各语句性能对比与应用场景"><a href="#九、各语句性能对比与应用场景" class="headerlink" title="九、各语句性能对比与应用场景"></a>九、各语句性能对比与应用场景</h3><h3 id="十、特殊流程控制语句"><a href="#十、特殊流程控制语句" class="headerlink" title="十、特殊流程控制语句"></a>十、特殊流程控制语句</h3><h4 id="10-1、break"><a href="#10-1、break" class="headerlink" title="10.1、break"></a>10.1、break</h4><h4 id="10-2、continue"><a href="#10-2、continue" class="headerlink" title="10.2、continue"></a>10.2、continue</h4><h4 id="10-3、return"><a href="#10-3、return" class="headerlink" title="10.3、return"></a>10.3、return</h4><h3 id="十一、方法的声明与使用（后面学习）"><a href="#十一、方法的声明与使用（后面学习）" class="headerlink" title="十一、方法的声明与使用（后面学习）"></a>十一、方法的声明与使用（后面学习）</h3><h3 id="十二、方法调用的过程分析（后面学习）"><a href="#十二、方法调用的过程分析（后面学习）" class="headerlink" title="十二、方法调用的过程分析（后面学习）"></a>十二、方法调用的过程分析（后面学习）</h3><h3 id="十三、跨类调用方法（后面学习）"><a href="#十三、跨类调用方法（后面学习）" class="headerlink" title="十三、跨类调用方法（后面学习）"></a>十三、跨类调用方法（后面学习）</h3><h3 id="十四、参数的值传递（后面学习）"><a href="#十四、参数的值传递（后面学习）" class="headerlink" title="十四、参数的值传递（后面学习）"></a>十四、参数的值传递（后面学习）</h3><h3 id="十五、方法的重载Overload（后面学习）"><a href="#十五、方法的重载Overload（后面学习）" class="headerlink" title="十五、方法的重载Overload（后面学习）"></a>十五、方法的重载Overload（后面学习）</h3>
             </div>
             <hr/>
 
@@ -1845,7 +1890,7 @@ public class ExaminationGradeRating&#123;
 
             
                 &nbsp; | &nbsp;字数统计:&nbsp;
-                <span class="white-color">15.4k</span> 字
+                <span class="white-color">18.1k</span> 字
             
 
             
